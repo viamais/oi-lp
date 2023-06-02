@@ -1937,7 +1937,6 @@ header .container-secondary .container .header-secondary__nav .header-secondary_
   width: 100%;
   display: flex;
   gap: 2.4rem;
-  align-items: center;
 }
 @media (max-width: 359px) {
   .s-know-more .blog-list {
@@ -2488,8 +2487,12 @@ footer .footer__main .container .footer__text p a {
 .contact-us__mobile .contact-us__step-2 {
   display: none;
 }
+.contact-us__mobile .contact-us__step-2 .wapp {
+  margin-top: 1.2rem;
+}
 .contact-us__mobile .btn-txt {
   max-width: 100%;
+  padding: 1.2rem 2.4rem;
 }
 .contact-us__mobile .btn-txt.wapp {
   display: flex;
