@@ -1,13 +1,27 @@
 "use strict";
 
 $(document).ready(function () {
-  $('#coverage').click(function () {
-    $('#consult-coverage-modal').addClass('open');
-    $('body').css('overflow', 'hidden');
+  /* $('#coverage').click(function () {
+  	$('#consult-coverage-modal').addClass('open');
+  	$('body').css('overflow', 'hidden');
   });
+  
   $('.btn-cancel-consult').click(function () {
-    $('#consult-coverage-modal').removeClass('open');
-    $('body').css('overflow', 'auto');
+  	$('#consult-coverage-modal').removeClass('open');
+  	$('body').css('overflow', 'auto');
+  });
+  */
+
+  $(document).ready(function () {
+    $('a[href^="#"]').on('click', function (event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top - 100 //100 é a altura do seu header fixo
+        }, 0);
+      }
+    });
   });
   $('.blog-list__item').click(function () {
     $(this).toggleClass('open');
@@ -69,6 +83,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.card-plan').each(function () {
     $(this).find('.price-500-default').addClass('active');
+    $(this).find('.price-400-default').addClass('active');
+    $(this).find('.price-1000-default').addClass('active');
   });
   $('.settings__btn').on('click', function () {
     var parentCard = $(this).closest('.card-plan');
@@ -82,6 +98,18 @@ $(document).ready(function () {
       $(this).children('.combo-icon').addClass('active');
     } else if (parentCard.find('.combo-icon.active').length === 0) {
       parentCard.find('.price-500-default').addClass('active');
+    }
+    if (!alreadyActive) {
+      parentCard.find('.' + priceClass).addClass('active');
+      $(this).children('.combo-icon').addClass('active');
+    } else if (parentCard.find('.combo-icon.active').length === 0) {
+      parentCard.find('.price-400-default').addClass('active');
+    }
+    if (!alreadyActive) {
+      parentCard.find('.' + priceClass).addClass('active');
+      $(this).children('.combo-icon').addClass('active');
+    } else if (parentCard.find('.combo-icon.active').length === 0) {
+      parentCard.find('.price-1000-default').addClass('active');
     }
     $('.card-plan').not(parentCard).removeClass('active');
     if (parentCard.find('.combo-icon.active').length > 0) {

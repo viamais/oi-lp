@@ -12,6 +12,7 @@
 		/>
 		<link rel="stylesheet" href="./css/plugins.css" />
 		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="shortcut icon" href="/svg/NovaLogo.svg" type="image/x-icon" />
 
 		<title>Oi</title>
 	</head>
@@ -25,20 +26,15 @@
 						alt="Agente autorizado da Oi"
 				/></a>
 				<nav class="header__nav">
-					<button
-						type="button"
-						id="coverage"
-						class="btn-coverage-desktop"
-						href=""
-					>
+					<a class="btn-coverage-desktop" href="#consult-coverage">
 						Consultar cobertura
-					</button>
+					</a>
 					<a href="#" class="btn-txt yellow">
 						<img
 							src="svg/icon-calling-black.svg"
 							alt="Ícone estilizado de telefone"
 						/>
-						Ligar Agora</a
+						0800 730 1800</a
 					>
 				</nav>
 			</div>
@@ -49,13 +45,6 @@
 							<a href="#">Para você</a>
 							<a href="#">Para sua empresa</a>
 						</div>
-
-						<a href="#" class="header-secondary__btn-green"
-							>Suporte Oi
-							<img
-								src="./svg/icon-call-center-green.svg"
-								alt="Ícone estilizado de atendimento ao consumidor"
-						/></a>
 					</nav>
 				</div>
 			</div>
@@ -120,6 +109,384 @@
 						<div class="card-plan">
 							<div class="card-plan__header">
 								<h2 class="header__velocity-plus">
+									<span class="velocity-plus__velocity">400 Mega</span>
+									<span class="velocity-plus__plus price-400-fixo"
+										>+ OI FIXO</span
+									>
+									<span class="velocity-plus__plus price-400-play-tv"
+										>+ OI Play TV</span
+									>
+									<span class="velocity-plus__plus price-400-fibra-x"
+										>+ OI Fibra X</span
+									>
+								</h2>
+
+								<div class="header__price">
+									<div class="price__value price-400-default active">
+										<span class="value__currency">R$</span>
+										<span class="value__integer">109</span>
+										<span class="third-column"
+											><span class="value__decimal">,90</span>
+											<span class="value__recurrence">/mês</span></span
+										>
+									</div>
+									<div class="price__value price-400-fixo">
+										<span class="value__currency">R$</span>
+										<span class="value__integer">139</span>
+										<span class="third-column"
+											><span class="value__decimal">,90</span>
+											<span class="value__recurrence">/mês</span></span
+										>
+									</div>
+									<div class="price__value price-400-play-tv">
+										<span class="value__currency">R$</span>
+										<span class="value__integer">179</span>
+										<span class="third-column"
+											><span class="value__decimal">,90</span>
+											<span class="value__recurrence">/mês</span></span
+										>
+									</div>
+									<div class="price__value price-400-fibra-x">
+										<span class="value__currency">R$</span>
+										<span class="value__integer">159</span>
+										<span class="third-column"
+											><span class="value__decimal">,90</span>
+											<span class="value__recurrence">/mês</span></span
+										>
+									</div>
+
+									<div class="price__method">
+										<span class="method__text"
+											>No cartão de crédito ou débito automático</span
+										>
+									</div>
+								</div>
+							</div>
+							<div class="card-plan__details">
+								<div class="details__header">
+									<h3 class="header__title">Monte seu combo com</h3>
+									<p class="subtitle__text">
+										Clique nos itens do combo e observe os valores acima
+									</p>
+								</div>
+
+								<ul class="details__settings">
+									<li>
+										<button class="settings__btn price-400-fixo" type="button">
+											<p class="settings__title">Fixo</p>
+											<div class="combo-icon fixo"></div>
+										</button>
+									</li>
+									<li>
+										<button
+											class="settings__btn price-400-play-tv"
+											type="button"
+										>
+											<p class="settings__title">Oi Play TV</p>
+											<div class="combo-icon oi-play-tv"></div>
+										</button>
+									</li>
+									<li>
+										<button
+											class="settings__btn price-400-fibra-x"
+											type="button"
+										>
+											<p class="settings__title">Conteúdos</p>
+											<div class="combo-icon conteudos"></div>
+										</button>
+									</li>
+								</ul>
+								<a href="" class="btn-txt yellow">Contrate online</a>
+
+								<div class="details__footer">
+									<button class="footer-list__btn">
+										Benefícios incluídos<iconify-icon
+											class="icon"
+											icon="ph:caret-down-bold"
+										></iconify-icon>
+									</button>
+									<ul class="footer__list">
+										<li>
+											<iconify-icon
+												icon="ph:check-bold"
+												class="icon"
+											></iconify-icon>
+											<span>Oi Play Básico</span>
+										</li>
+										<li>
+											<iconify-icon
+												icon="ph:check-bold"
+												class="icon"
+											></iconify-icon>
+											<span>Oi Livros</span>
+										</li>
+										<li>
+											<iconify-icon
+												icon="ph:check-bold"
+												class="icon"
+											></iconify-icon>
+											<span>Oi Livros</span>
+										</li>
+									</ul>
+									<button
+										type="button"
+										class="details-offer"
+										id="price-400-mega"
+									>
+										<iconify-icon
+											class="icon"
+											icon="ph:plus-bold"
+										></iconify-icon
+										>Detalhes da oferta
+									</button>
+								</div>
+							</div>
+							<div class="card-plan__offer-details">
+								<ul class="offer-details__list">
+									<li class="offer-details__item price-400-default">
+										<div class="offer-details__content">
+											<div class="content__header">
+												<div class="content__title">
+													<h2>Internet Fibra: 400 MEGA</h2>
+													<iconify-icon
+														class="icon close-modal-offer"
+														icon="ph:x-bold"
+													></iconify-icon>
+												</div>
+												<div class="content__subtitle">
+													<p class="subtitle__velocity">400 MEGA</p>
+													<p class="subtitle__text">
+														R$ 109,90/mês no Cartão de Crédito ou Débito
+														Automático.
+													</p>
+												</div>
+
+												<ul class="content__main">
+													<li class="main__item">
+														<h3 class="item__title">
+															Você tem um desconto de R$ 10,00
+														</h3>
+														<p class="item__text">
+															Você tem um desconto de R$ 10,00 por mês se ativar
+															o Débito Automático ou Cartão de Crédito. Esse
+															desconto vale por tempo indeterminado, somente
+															para novas assinaturas e é suspenso caso desative
+															as opções de pagamento automático.
+														</p>
+													</li>
+													<li class="main__item">
+														<h3 class="item__title">
+															Você tem um desconto de R$ 10,00
+														</h3>
+														<p class="item__text">
+															Você tem um desconto de R$ 10,00 por mês se ativar
+															o Débito Automático ou Cartão de Crédito. Esse
+															desconto vale por tempo indeterminado, somente
+															para novas assinaturas e é suspenso caso desative
+															as opções de pagamento automático.
+														</p>
+													</li>
+													<li class="main__item">
+														<h3 class="item__title">
+															Confira o regulamento da oferta
+														</h3>
+														<a
+															href="https://www.oi.com.br/internet/regulamento"
+															class="item__text regulation"
+														>
+															Consulte todas as regras
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li class="offer-details__item price-400-fixo">
+										<div class="offer-details__content">
+											<div class="content__header">
+												<div class="content__title">
+													<h2>Internet Fibra: 400 MEGA + fixo</h2>
+													<iconify-icon
+														class="icon close-modal-offer"
+														icon="ph:x-bold"
+													></iconify-icon>
+												</div>
+												<div class="content__subtitle">
+													<p class="subtitle__velocity">
+														400 MEGA + Telefone Fixo
+													</p>
+													<p class="subtitle__text">
+														R$ 139,90/mês no Cartão de Crédito ou Débito
+														Automático.
+													</p>
+												</div>
+
+												<ul class="content__main">
+													<li class="main__item">
+														<h3 class="item__title">
+															Você tem um desconto de R$ 10,00
+														</h3>
+														<p class="item__text">
+															Você tem um desconto de R$ 10,00 por mês se ativar
+															o Débito Automático ou Cartão de Crédito. Esse
+															desconto vale por tempo indeterminado, somente
+															para novas assinaturas e é suspenso caso desative
+															as opções de pagamento automático.
+														</p>
+													</li>
+													<li class="main__item">
+														<h3 class="item__title">
+															Você tem um desconto de R$ 10,00
+														</h3>
+														<p class="item__text">
+															Você tem um desconto de R$ 10,00 por mês se ativar
+															o Débito Automático ou Cartão de Crédito. Esse
+															desconto vale por tempo indeterminado, somente
+															para novas assinaturas e é suspenso caso desative
+															as opções de pagamento automático.
+														</p>
+													</li>
+													<li class="main__item">
+														<h3 class="item__title">
+															Confira o regulamento da oferta
+														</h3>
+														<a
+															href="https://www.oi.com.br/internet/regulamento"
+															class="item__text regulation"
+														>
+															Consulte todas as regras
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li class="offer-details__item price-400-play-tv">
+										<div class="offer-details__content">
+											<div class="content__header">
+												<div class="content__title">
+													<h2>Internet Fibra: 400 MEGA + Play TV</h2>
+													<iconify-icon
+														class="icon close-modal-offer"
+														icon="ph:x-bold"
+													></iconify-icon>
+												</div>
+												<div class="content__subtitle">
+													<p class="subtitle__velocity">
+														400 MEGA + + Acesso ao Oi Play TV
+													</p>
+													<p class="subtitle__text">
+														R$ 179,90/mês no Cartão de Crédito ou Débito
+														Automático.
+													</p>
+												</div>
+
+												<ul class="content__main">
+													<li class="main__item">
+														<h3 class="item__title">
+															Você tem um desconto de R$ 10,00
+														</h3>
+														<p class="item__text">
+															Você tem um desconto de R$ 10,00 por mês se ativar
+															o Débito Automático ou Cartão de Crédito. Esse
+															desconto vale por tempo indeterminado, somente
+															para novas assinaturas e é suspenso caso desative
+															as opções de pagamento automático.
+														</p>
+													</li>
+													<li class="main__item">
+														<h3 class="item__title">
+															Você tem um desconto de R$ 10,00
+														</h3>
+														<p class="item__text">
+															Você tem um desconto de R$ 10,00 por mês se ativar
+															o Débito Automático ou Cartão de Crédito. Esse
+															desconto vale por tempo indeterminado, somente
+															para novas assinaturas e é suspenso caso desative
+															as opções de pagamento automático.
+														</p>
+													</li>
+													<li class="main__item">
+														<h3 class="item__title">
+															Confira o regulamento da oferta
+														</h3>
+														<a
+															href="https://www.oi.com.br/internet/regulamento"
+															class="item__text regulation"
+														>
+															Consulte todas as regras
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li class="offer-details__item price-400-fibra-x">
+										<div class="offer-details__content">
+											<div class="content__header">
+												<div class="content__title">
+													<h2>Internet Fibra: 400 MEGA + FIBRA X</h2>
+													<iconify-icon
+														class="icon close-modal-offer"
+														icon="ph:x-bold"
+													></iconify-icon>
+												</div>
+												<div class="content__subtitle">
+													<p class="subtitle__velocity">
+														400 MEGA + Oi Fibra X
+													</p>
+													<p class="subtitle__text">
+														R$ 159,90/mês no Cartão de Crédito ou Débito
+														Automático.
+													</p>
+												</div>
+
+												<ul class="content__main">
+													<li class="main__item">
+														<h3 class="item__title">
+															Você tem um desconto de R$ 10,00
+														</h3>
+														<p class="item__text">
+															Você tem um desconto de R$ 10,00 por mês se ativar
+															o Débito Automático ou Cartão de Crédito. Esse
+															desconto vale por tempo indeterminado, somente
+															para novas assinaturas e é suspenso caso desative
+															as opções de pagamento automático.
+														</p>
+													</li>
+													<li class="main__item">
+														<h3 class="item__title">
+															Você tem um desconto de R$ 10,00
+														</h3>
+														<p class="item__text">
+															Você tem um desconto de R$ 10,00 por mês se ativar
+															o Débito Automático ou Cartão de Crédito. Esse
+															desconto vale por tempo indeterminado, somente
+															para novas assinaturas e é suspenso caso desative
+															as opções de pagamento automático.
+														</p>
+													</li>
+													<li class="main__item">
+														<h3 class="item__title">
+															Confira o regulamento da oferta
+														</h3>
+														<a
+															href="https://www.oi.com.br/internet/regulamento"
+															class="item__text regulation"
+														>
+															Consulte todas as regras
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card-plan">
+							<div class="card-plan__header">
+								<h2 class="header__velocity-plus">
 									<span class="velocity-plus__velocity">500 Mega</span>
 									<span class="velocity-plus__plus price-500-fixo"
 										>+ OI FIXO</span
@@ -177,7 +544,7 @@
 								<div class="details__header">
 									<h3 class="header__title">Monte seu combo com</h3>
 									<p class="subtitle__text">
-										Selecione os itens do seu combo abaixo
+										Clique nos itens do combo e observe os valores acima
 									</p>
 								</div>
 
@@ -207,7 +574,7 @@
 										</button>
 									</li>
 								</ul>
-								<a href="" class="btn-txt yellow">Assinar</a>
+								<a href="" class="btn-txt yellow">Contrate online</a>
 
 								<div class="details__footer">
 									<button class="footer-list__btn">
@@ -387,7 +754,7 @@
 														500 MEGA + + Acesso ao Oi Play TV
 													</p>
 													<p class="subtitle__text">
-														R$ 159,90/mês no Cartão de Crédito ou Débito
+														R$ 189,90/mês no Cartão de Crédito ou Débito
 														Automático.
 													</p>
 												</div>
@@ -498,46 +865,46 @@
 						<div class="card-plan">
 							<div class="card-plan__header">
 								<h2 class="header__velocity-plus">
-									<span class="velocity-plus__velocity">500 Mega</span>
-									<span class="velocity-plus__plus price-500-fixo"
+									<span class="velocity-plus__velocity">1 GIGA</span>
+									<span class="velocity-plus__plus price-1000-fixo"
 										>+ OI FIXO</span
 									>
-									<span class="velocity-plus__plus price-500-play-tv"
+									<span class="velocity-plus__plus price-1000-play-tv"
 										>+ OI Play TV</span
 									>
-									<span class="velocity-plus__plus price-500-fibra-x"
+									<span class="velocity-plus__plus price-1000-fibra-x"
 										>+ OI Fibra X</span
 									>
 								</h2>
 
 								<div class="header__price">
-									<div class="price__value price-500-default active">
+									<div class="price__value price-1000-default active">
 										<span class="value__currency">R$</span>
-										<span class="value__integer">119</span>
+										<span class="value__integer">199</span>
 										<span class="third-column"
 											><span class="value__decimal">,90</span>
 											<span class="value__recurrence">/mês</span></span
 										>
 									</div>
-									<div class="price__value price-500-fixo">
+									<div class="price__value price-1000-fixo">
 										<span class="value__currency">R$</span>
-										<span class="value__integer">149</span>
+										<span class="value__integer">229</span>
 										<span class="third-column"
 											><span class="value__decimal">,90</span>
 											<span class="value__recurrence">/mês</span></span
 										>
 									</div>
-									<div class="price__value price-500-play-tv">
+									<div class="price__value price-1000-play-tv">
 										<span class="value__currency">R$</span>
-										<span class="value__integer">189</span>
+										<span class="value__integer">269</span>
 										<span class="third-column"
 											><span class="value__decimal">,90</span>
 											<span class="value__recurrence">/mês</span></span
 										>
 									</div>
-									<div class="price__value price-500-fibra-x">
+									<div class="price__value price-1000-fibra-x">
 										<span class="value__currency">R$</span>
-										<span class="value__integer">169</span>
+										<span class="value__integer">249</span>
 										<span class="third-column"
 											><span class="value__decimal">,90</span>
 											<span class="value__recurrence">/mês</span></span
@@ -555,20 +922,20 @@
 								<div class="details__header">
 									<h3 class="header__title">Monte seu combo com</h3>
 									<p class="subtitle__text">
-										Selecione os itens do seu combo abaixo
+										Clique nos itens do combo e observe os valores acima
 									</p>
 								</div>
 
 								<ul class="details__settings">
 									<li>
-										<button class="settings__btn price-500-fixo" type="button">
+										<button class="settings__btn price-1000-fixo" type="button">
 											<p class="settings__title">Fixo</p>
 											<div class="combo-icon fixo"></div>
 										</button>
 									</li>
 									<li>
 										<button
-											class="settings__btn price-500-play-tv"
+											class="settings__btn price-1000-play-tv"
 											type="button"
 										>
 											<p class="settings__title">Oi Play TV</p>
@@ -577,7 +944,7 @@
 									</li>
 									<li>
 										<button
-											class="settings__btn price-500-fibra-x"
+											class="settings__btn price-1000-fibra-x"
 											type="button"
 										>
 											<p class="settings__title">Conteúdos</p>
@@ -585,7 +952,7 @@
 										</button>
 									</li>
 								</ul>
-								<a href="" class="btn-txt yellow">Assinar</a>
+								<a href="" class="btn-txt yellow">Contrate online</a>
 
 								<div class="details__footer">
 									<button class="footer-list__btn">
@@ -620,7 +987,7 @@
 									<button
 										type="button"
 										class="details-offer"
-										id="price-500-mega"
+										id="price-1000-mega"
 									>
 										<iconify-icon
 											class="icon"
@@ -632,20 +999,20 @@
 							</div>
 							<div class="card-plan__offer-details">
 								<ul class="offer-details__list">
-									<li class="offer-details__item price-500-default">
+									<li class="offer-details__item price-1000-default">
 										<div class="offer-details__content">
 											<div class="content__header">
 												<div class="content__title">
-													<h2>Internet Fibra: 500 MEGA</h2>
+													<h2>Internet Fibra: 1 GIGA</h2>
 													<iconify-icon
 														class="icon close-modal-offer"
 														icon="ph:x-bold"
 													></iconify-icon>
 												</div>
 												<div class="content__subtitle">
-													<p class="subtitle__velocity">500 MEGA</p>
+													<p class="subtitle__velocity">1 GIGA</p>
 													<p class="subtitle__text">
-														R$ 119,90/mês no Cartão de Crédito ou Débito
+														R$ 199,90/mês no Cartão de Crédito ou Débito
 														Automático.
 													</p>
 												</div>
@@ -690,11 +1057,11 @@
 											</div>
 										</div>
 									</li>
-									<li class="offer-details__item price-500-fixo">
+									<li class="offer-details__item price-1000-fixo">
 										<div class="offer-details__content">
 											<div class="content__header">
 												<div class="content__title">
-													<h2>Internet Fibra: 500 MEGA + fixo</h2>
+													<h2>Internet Fibra: 1 GIGA + fixo</h2>
 													<iconify-icon
 														class="icon close-modal-offer"
 														icon="ph:x-bold"
@@ -702,10 +1069,10 @@
 												</div>
 												<div class="content__subtitle">
 													<p class="subtitle__velocity">
-														500 MEGA + Telefone Fixo
+														1 GIGA + Telefone Fixo
 													</p>
 													<p class="subtitle__text">
-														R$ 149,90/mês no Cartão de Crédito ou Débito
+														R$ 229,90/mês no Cartão de Crédito ou Débito
 														Automático.
 													</p>
 												</div>
@@ -750,11 +1117,11 @@
 											</div>
 										</div>
 									</li>
-									<li class="offer-details__item price-500-play-tv">
+									<li class="offer-details__item price-1000-play-tv">
 										<div class="offer-details__content">
 											<div class="content__header">
 												<div class="content__title">
-													<h2>Internet Fibra: 500 MEGA + Play TV</h2>
+													<h2>Internet Fibra: 1 GIGA + Play TV</h2>
 													<iconify-icon
 														class="icon close-modal-offer"
 														icon="ph:x-bold"
@@ -762,10 +1129,10 @@
 												</div>
 												<div class="content__subtitle">
 													<p class="subtitle__velocity">
-														500 MEGA + + Acesso ao Oi Play TV
+														1 GIGA + + Acesso ao Oi Play TV
 													</p>
 													<p class="subtitle__text">
-														R$ 159,90/mês no Cartão de Crédito ou Débito
+														R$ 269,90/mês no Cartão de Crédito ou Débito
 														Automático.
 													</p>
 												</div>
@@ -810,400 +1177,20 @@
 											</div>
 										</div>
 									</li>
-									<li class="offer-details__item price-500-fibra-x">
+									<li class="offer-details__item price-1000-fibra-x">
 										<div class="offer-details__content">
 											<div class="content__header">
 												<div class="content__title">
-													<h2>Internet Fibra: 500 MEGA + FIBRA X</h2>
+													<h2>Internet Fibra: 1 GIGA + FIBRA X</h2>
 													<iconify-icon
 														class="icon close-modal-offer"
 														icon="ph:x-bold"
 													></iconify-icon>
 												</div>
 												<div class="content__subtitle">
-													<p class="subtitle__velocity">
-														500 MEGA + Oi Fibra X
-													</p>
+													<p class="subtitle__velocity">1 GIGA + Oi Fibra X</p>
 													<p class="subtitle__text">
-														R$ 169,90/mês no Cartão de Crédito ou Débito
-														Automático.
-													</p>
-												</div>
-
-												<ul class="content__main">
-													<li class="main__item">
-														<h3 class="item__title">
-															Você tem um desconto de R$ 10,00
-														</h3>
-														<p class="item__text">
-															Você tem um desconto de R$ 10,00 por mês se ativar
-															o Débito Automático ou Cartão de Crédito. Esse
-															desconto vale por tempo indeterminado, somente
-															para novas assinaturas e é suspenso caso desative
-															as opções de pagamento automático.
-														</p>
-													</li>
-													<li class="main__item">
-														<h3 class="item__title">
-															Você tem um desconto de R$ 10,00
-														</h3>
-														<p class="item__text">
-															Você tem um desconto de R$ 10,00 por mês se ativar
-															o Débito Automático ou Cartão de Crédito. Esse
-															desconto vale por tempo indeterminado, somente
-															para novas assinaturas e é suspenso caso desative
-															as opções de pagamento automático.
-														</p>
-													</li>
-													<li class="main__item">
-														<h3 class="item__title">
-															Confira o regulamento da oferta
-														</h3>
-														<a
-															href="https://www.oi.com.br/internet/regulamento"
-															class="item__text regulation"
-														>
-															Consulte todas as regras
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="card-plan">
-							<div class="card-plan__header">
-								<h2 class="header__velocity-plus">
-									<span class="velocity-plus__velocity">500 Mega</span>
-									<span class="velocity-plus__plus price-500-fixo"
-										>+ OI FIXO</span
-									>
-									<span class="velocity-plus__plus price-500-play-tv"
-										>+ OI Play TV</span
-									>
-									<span class="velocity-plus__plus price-500-fibra-x"
-										>+ OI Fibra X</span
-									>
-								</h2>
-
-								<div class="header__price">
-									<div class="price__value price-500-default active">
-										<span class="value__currency">R$</span>
-										<span class="value__integer">119</span>
-										<span class="third-column"
-											><span class="value__decimal">,90</span>
-											<span class="value__recurrence">/mês</span></span
-										>
-									</div>
-									<div class="price__value price-500-fixo">
-										<span class="value__currency">R$</span>
-										<span class="value__integer">149</span>
-										<span class="third-column"
-											><span class="value__decimal">,90</span>
-											<span class="value__recurrence">/mês</span></span
-										>
-									</div>
-									<div class="price__value price-500-play-tv">
-										<span class="value__currency">R$</span>
-										<span class="value__integer">189</span>
-										<span class="third-column"
-											><span class="value__decimal">,90</span>
-											<span class="value__recurrence">/mês</span></span
-										>
-									</div>
-									<div class="price__value price-500-fibra-x">
-										<span class="value__currency">R$</span>
-										<span class="value__integer">169</span>
-										<span class="third-column"
-											><span class="value__decimal">,90</span>
-											<span class="value__recurrence">/mês</span></span
-										>
-									</div>
-
-									<div class="price__method">
-										<span class="method__text"
-											>No cartão de crédito ou débito automático</span
-										>
-									</div>
-								</div>
-							</div>
-							<div class="card-plan__details">
-								<div class="details__header">
-									<h3 class="header__title">Monte seu combo com</h3>
-									<p class="subtitle__text">
-										Selecione os itens do seu combo abaixo
-									</p>
-								</div>
-
-								<ul class="details__settings">
-									<li>
-										<button class="settings__btn price-500-fixo" type="button">
-											<p class="settings__title">Fixo</p>
-											<div class="combo-icon fixo"></div>
-										</button>
-									</li>
-									<li>
-										<button
-											class="settings__btn price-500-play-tv"
-											type="button"
-										>
-											<p class="settings__title">Oi Play TV</p>
-											<div class="combo-icon oi-play-tv"></div>
-										</button>
-									</li>
-									<li>
-										<button
-											class="settings__btn price-500-fibra-x"
-											type="button"
-										>
-											<p class="settings__title">Conteúdos</p>
-											<div class="combo-icon conteudos"></div>
-										</button>
-									</li>
-								</ul>
-								<a href="" class="btn-txt yellow">Assinar</a>
-
-								<div class="details__footer">
-									<button class="footer-list__btn">
-										Benefícios incluídos<iconify-icon
-											class="icon"
-											icon="ph:caret-down-bold"
-										></iconify-icon>
-									</button>
-									<ul class="footer__list">
-										<li>
-											<iconify-icon
-												icon="ph:check-bold"
-												class="icon"
-											></iconify-icon>
-											<span>Oi Play Básico</span>
-										</li>
-										<li>
-											<iconify-icon
-												icon="ph:check-bold"
-												class="icon"
-											></iconify-icon>
-											<span>Oi Livros</span>
-										</li>
-										<li>
-											<iconify-icon
-												icon="ph:check-bold"
-												class="icon"
-											></iconify-icon>
-											<span>Oi Livros</span>
-										</li>
-									</ul>
-									<button
-										type="button"
-										class="details-offer"
-										id="price-500-mega"
-									>
-										<iconify-icon
-											class="icon"
-											icon="ph:plus-bold"
-										></iconify-icon
-										>Detalhes da oferta
-									</button>
-								</div>
-							</div>
-							<div class="card-plan__offer-details">
-								<ul class="offer-details__list">
-									<li class="offer-details__item price-500-default">
-										<div class="offer-details__content">
-											<div class="content__header">
-												<div class="content__title">
-													<h2>Internet Fibra: 500 MEGA</h2>
-													<iconify-icon
-														class="icon close-modal-offer"
-														icon="ph:x-bold"
-													></iconify-icon>
-												</div>
-												<div class="content__subtitle">
-													<p class="subtitle__velocity">500 MEGA</p>
-													<p class="subtitle__text">
-														R$ 119,90/mês no Cartão de Crédito ou Débito
-														Automático.
-													</p>
-												</div>
-
-												<ul class="content__main">
-													<li class="main__item">
-														<h3 class="item__title">
-															Você tem um desconto de R$ 10,00
-														</h3>
-														<p class="item__text">
-															Você tem um desconto de R$ 10,00 por mês se ativar
-															o Débito Automático ou Cartão de Crédito. Esse
-															desconto vale por tempo indeterminado, somente
-															para novas assinaturas e é suspenso caso desative
-															as opções de pagamento automático.
-														</p>
-													</li>
-													<li class="main__item">
-														<h3 class="item__title">
-															Você tem um desconto de R$ 10,00
-														</h3>
-														<p class="item__text">
-															Você tem um desconto de R$ 10,00 por mês se ativar
-															o Débito Automático ou Cartão de Crédito. Esse
-															desconto vale por tempo indeterminado, somente
-															para novas assinaturas e é suspenso caso desative
-															as opções de pagamento automático.
-														</p>
-													</li>
-													<li class="main__item">
-														<h3 class="item__title">
-															Confira o regulamento da oferta
-														</h3>
-														<a
-															href="https://www.oi.com.br/internet/regulamento"
-															class="item__text regulation"
-														>
-															Consulte todas as regras
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</li>
-									<li class="offer-details__item price-500-fixo">
-										<div class="offer-details__content">
-											<div class="content__header">
-												<div class="content__title">
-													<h2>Internet Fibra: 500 MEGA + fixo</h2>
-													<iconify-icon
-														class="icon close-modal-offer"
-														icon="ph:x-bold"
-													></iconify-icon>
-												</div>
-												<div class="content__subtitle">
-													<p class="subtitle__velocity">
-														500 MEGA + Telefone Fixo
-													</p>
-													<p class="subtitle__text">
-														R$ 149,90/mês no Cartão de Crédito ou Débito
-														Automático.
-													</p>
-												</div>
-
-												<ul class="content__main">
-													<li class="main__item">
-														<h3 class="item__title">
-															Você tem um desconto de R$ 10,00
-														</h3>
-														<p class="item__text">
-															Você tem um desconto de R$ 10,00 por mês se ativar
-															o Débito Automático ou Cartão de Crédito. Esse
-															desconto vale por tempo indeterminado, somente
-															para novas assinaturas e é suspenso caso desative
-															as opções de pagamento automático.
-														</p>
-													</li>
-													<li class="main__item">
-														<h3 class="item__title">
-															Você tem um desconto de R$ 10,00
-														</h3>
-														<p class="item__text">
-															Você tem um desconto de R$ 10,00 por mês se ativar
-															o Débito Automático ou Cartão de Crédito. Esse
-															desconto vale por tempo indeterminado, somente
-															para novas assinaturas e é suspenso caso desative
-															as opções de pagamento automático.
-														</p>
-													</li>
-													<li class="main__item">
-														<h3 class="item__title">
-															Confira o regulamento da oferta
-														</h3>
-														<a
-															href="https://www.oi.com.br/internet/regulamento"
-															class="item__text regulation"
-														>
-															Consulte todas as regras
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</li>
-									<li class="offer-details__item price-500-play-tv">
-										<div class="offer-details__content">
-											<div class="content__header">
-												<div class="content__title">
-													<h2>Internet Fibra: 500 MEGA + Play TV</h2>
-													<iconify-icon
-														class="icon close-modal-offer"
-														icon="ph:x-bold"
-													></iconify-icon>
-												</div>
-												<div class="content__subtitle">
-													<p class="subtitle__velocity">
-														500 MEGA + + Acesso ao Oi Play TV
-													</p>
-													<p class="subtitle__text">
-														R$ 159,90/mês no Cartão de Crédito ou Débito
-														Automático.
-													</p>
-												</div>
-
-												<ul class="content__main">
-													<li class="main__item">
-														<h3 class="item__title">
-															Você tem um desconto de R$ 10,00
-														</h3>
-														<p class="item__text">
-															Você tem um desconto de R$ 10,00 por mês se ativar
-															o Débito Automático ou Cartão de Crédito. Esse
-															desconto vale por tempo indeterminado, somente
-															para novas assinaturas e é suspenso caso desative
-															as opções de pagamento automático.
-														</p>
-													</li>
-													<li class="main__item">
-														<h3 class="item__title">
-															Você tem um desconto de R$ 10,00
-														</h3>
-														<p class="item__text">
-															Você tem um desconto de R$ 10,00 por mês se ativar
-															o Débito Automático ou Cartão de Crédito. Esse
-															desconto vale por tempo indeterminado, somente
-															para novas assinaturas e é suspenso caso desative
-															as opções de pagamento automático.
-														</p>
-													</li>
-													<li class="main__item">
-														<h3 class="item__title">
-															Confira o regulamento da oferta
-														</h3>
-														<a
-															href="https://www.oi.com.br/internet/regulamento"
-															class="item__text regulation"
-														>
-															Consulte todas as regras
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</li>
-									<li class="offer-details__item price-500-fibra-x">
-										<div class="offer-details__content">
-											<div class="content__header">
-												<div class="content__title">
-													<h2>Internet Fibra: 500 MEGA + FIBRA X</h2>
-													<iconify-icon
-														class="icon close-modal-offer"
-														icon="ph:x-bold"
-													></iconify-icon>
-												</div>
-												<div class="content__subtitle">
-													<p class="subtitle__velocity">
-														500 MEGA + Oi Fibra X
-													</p>
-													<p class="subtitle__text">
-														R$ 169,90/mês no Cartão de Crédito ou Débito
+														R$ 249,90/mês no Cartão de Crédito ou Débito
 														Automático.
 													</p>
 												</div>
@@ -1259,6 +1246,42 @@
 					"
 						>*Oi é a melhor operadora nacional de fibra óptica do Brasil</a
 					>
+				</div>
+			</section>
+
+			<section class="s-coverage" id="consult-coverage">
+				<div class="container">
+					<h2>Consulte sua cobertura</h2>
+					<form
+						action="
+					"
+					>
+						<div class="form-group">
+							<input
+								type="text"
+								class="form-control"
+								id="cep"
+								placeholder="Digite seu CEP"
+							/>
+							<!-- insra o número de sua residência -->
+							<input
+								type="text"
+								class="form-control"
+								id="number"
+								placeholder="Insira o n° de residência"
+							/>
+							<!-- o seu número de telefone -->
+							<input
+								type="text"
+								class="form-control"
+								id="phone"
+								placeholder="E seu telefone"
+							/>
+						</div>
+						<button type="submit" class="btn btn-submit">
+							Consultar cobertura
+						</button>
+					</form>
 				</div>
 			</section>
 
@@ -1333,7 +1356,7 @@
 								</p>
 							</div>
 
-							<a href="" class="btn-txt green">Assinar agora</a>
+							<a href="" class="btn-txt green">Contrate online</a>
 						</div>
 
 						<div class="content__img">
@@ -1401,7 +1424,7 @@
 									mais.
 								</p>
 							</div>
-							<a href="" class="btn-txt black">Assinar agora</a>
+							<a href="" class="btn-txt black">Contrate online</a>
 						</div>
 						<div class="content__img">
 							<img src="img/img-bg-oi-expert.png" alt="Mulher sorrindo" />
@@ -1645,7 +1668,7 @@
 						</li>
 						<li class="s-faq__accordion">
 							<div class="s-faq__accordion-header">
-								<p>Internet residencial Oi Fibra: quais são os benefícios?</p>
+								<p>Internet fibra ótica: o que é e como funciona?</p>
 								<iconify-icon
 									class="icon"
 									icon="ph:caret-down-bold"
@@ -1653,47 +1676,25 @@
 							</div>
 							<div class="s-faq__accordion-content">
 								<p>
-									Oi Fibra é a internet da Oi que usa a fibra ótica pra oferecer
-									a melhor experiência de navegação pra você e sua família. Com
-									a conexão banda larga de alta velocidade, você assiste a
-									filmes e séries com alta qualidade de transmissão, joga online
-									com menos lag e faz download de arquivos pesados mais rápido.
+									A fibra ótica é um cabo fino e flexível usado pra transmitir
+									dados na velocidade da luz. Essa tecnologia permite oferecer
+									internet residencial de alta velocidade pros usuários.
 								</p>
-
 								<p>
-									Tudo isso é possível porque a tecnologia FTTH (Fiber To The
-									Home ou fibra para casa) leva o cabo da fibra até dentro da
-									casa dos usuários, garantindo sinal de internet com muito mais
-									estabilidade e velocidade.
-								</p>
-
-								<p>
-									Com a internet da Oi, você também recebe o potente modem WiFi
-									UP pra distribuir a internet pra casa toda, conectando vários
-									dispositivos ao mesmo tempo sem perda de sinal. Outras
-									operadoras utilizam a tecnologia FTTC (Fiber to the Curb), que
-									leva a fibra até o poste na rua, seguindo até a casa do
-									usuário por meio de cabos convencionais.
-								</p>
-
-								<p>
-									Ao contratar os planos de internet Oi Fibra, você ganha acesso
-									ao plano Oi Play TV Básico, serviço de streaming da Oi pra
-									assistir filmes e séries, além de canais de TV ao vivo direto
-									pelo computador, celular ou tablet.
-								</p>
-
-								<p>
-									Clientes Oi Fibra a partir dos planos com velocidade de
-									internet de 400 Mega têm assistência do Oi Expert, com
-									especialistas 24h por dia pra te dar suporte com computadores,
-									celulares, Smart TV e roteadores Wi-Fi Mesh.
+									O cabo de fibra ótica é composto por um filamento feito de
+									vidro que não sofre com interferências externas e nem grandes
+									perdas de sinais ao longo do trajeto. Por isso, o sinal da
+									internet fibra ótica é transmitido até a casa dos usuários com
+									mais velocidade e estabilidade.
 								</p>
 							</div>
 						</li>
 						<li class="s-faq__accordion">
 							<div class="s-faq__accordion-header">
-								<p>Internet residencial Oi Fibra: quais são os benefícios?</p>
+								<p>
+									Velocidade da internet: como escolher o plano com a velocidade
+									ideal pra minha casa?
+								</p>
 								<iconify-icon
 									class="icon"
 									icon="ph:caret-down-bold"
@@ -1701,47 +1702,30 @@
 							</div>
 							<div class="s-faq__accordion-content">
 								<p>
-									Oi Fibra é a internet da Oi que usa a fibra ótica pra oferecer
-									a melhor experiência de navegação pra você e sua família. Com
-									a conexão banda larga de alta velocidade, você assiste a
-									filmes e séries com alta qualidade de transmissão, joga online
-									com menos lag e faz download de arquivos pesados mais rápido.
+									Oi Fibra 200 Mega é ideal pra conectar vários dispositivos ao
+									mesmo tempo, assistir filmes e séries, trabalhar ou estudar de
+									casa com qualidade de sinal.
 								</p>
-
 								<p>
-									Tudo isso é possível porque a tecnologia FTTH (Fiber To The
-									Home ou fibra para casa) leva o cabo da fibra até dentro da
-									casa dos usuários, garantindo sinal de internet com muito mais
-									estabilidade e velocidade.
+									Oi Fibra 400 Mega ou 500 Mega é indicado pra quem adora
+									assistir filmes e maratonar séries online sem travar,
+									trabalhar e estudar ao mesmo tempo com velocidade e
+									estabilidade.
 								</p>
-
 								<p>
-									Com a internet da Oi, você também recebe o potente modem WiFi
-									UP pra distribuir a internet pra casa toda, conectando vários
-									dispositivos ao mesmo tempo sem perda de sinal. Outras
-									operadoras utilizam a tecnologia FTTC (Fiber to the Curb), que
-									leva a fibra até o poste na rua, seguindo até a casa do
-									usuário por meio de cabos convencionais.
+									Oi Fibra 1 Giga é internet perfeita pra gamers! O plano tem
+									muita velocidade de download e upload (1 Giga tem 1.000 mega),
+									com ping baixo e sinal estável pra jogar sem lag.
 								</p>
-
 								<p>
-									Ao contratar os planos de internet Oi Fibra, você ganha acesso
-									ao plano Oi Play TV Básico, serviço de streaming da Oi pra
-									assistir filmes e séries, além de canais de TV ao vivo direto
-									pelo computador, celular ou tablet.
-								</p>
-
-								<p>
-									Clientes Oi Fibra a partir dos planos com velocidade de
-									internet de 400 Mega têm assistência do Oi Expert, com
-									especialistas 24h por dia pra te dar suporte com computadores,
-									celulares, Smart TV e roteadores Wi-Fi Mesh.
+									Consulte a cobertura de Oi Fibra na sua região no site de Oi
+									Fibra e escolha o plano ideal para você!
 								</p>
 							</div>
 						</li>
 						<li class="s-faq__accordion">
 							<div class="s-faq__accordion-header">
-								<p>Internet residencial Oi Fibra: quais são os benefícios?</p>
+								<p>Como contratar internet banda larga Oi Fibra?</p>
 								<iconify-icon
 									class="icon"
 									icon="ph:caret-down-bold"
@@ -1749,47 +1733,30 @@
 							</div>
 							<div class="s-faq__accordion-content">
 								<p>
-									Oi Fibra é a internet da Oi que usa a fibra ótica pra oferecer
-									a melhor experiência de navegação pra você e sua família. Com
-									a conexão banda larga de alta velocidade, você assiste a
-									filmes e séries com alta qualidade de transmissão, joga online
-									com menos lag e faz download de arquivos pesados mais rápido.
+									Pra contratar internet banda larga com fibra ótica da Oi, vá
+									ao topo deste site da Oi Fibra, consulte a disponibilidade de
+									internet por CEP e escolha o plano Oi ideal disponível pra sua
+									região.
 								</p>
-
 								<p>
-									Tudo isso é possível porque a tecnologia FTTH (Fiber To The
-									Home ou fibra para casa) leva o cabo da fibra até dentro da
-									casa dos usuários, garantindo sinal de internet com muito mais
-									estabilidade e velocidade.
+									Se preferir, você pode contratar internet banda larga Oi Fibra
+									pelo telefone 0800 730 1800 ou pelo WhatsApp, de segunda a
+									sábado, das 7h às 22h, e aos domingos, das 7h às 19h (horário
+									de Brasília), exceto feriados.
 								</p>
-
 								<p>
-									Com a internet da Oi, você também recebe o potente modem WiFi
-									UP pra distribuir a internet pra casa toda, conectando vários
-									dispositivos ao mesmo tempo sem perda de sinal. Outras
-									operadoras utilizam a tecnologia FTTC (Fiber to the Curb), que
-									leva a fibra até o poste na rua, seguindo até a casa do
-									usuário por meio de cabos convencionais.
-								</p>
-
-								<p>
-									Ao contratar os planos de internet Oi Fibra, você ganha acesso
-									ao plano Oi Play TV Básico, serviço de streaming da Oi pra
-									assistir filmes e séries, além de canais de TV ao vivo direto
-									pelo computador, celular ou tablet.
-								</p>
-
-								<p>
-									Clientes Oi Fibra a partir dos planos com velocidade de
-									internet de 400 Mega têm assistência do Oi Expert, com
-									especialistas 24h por dia pra te dar suporte com computadores,
-									celulares, Smart TV e roteadores Wi-Fi Mesh.
+									Se a internet fibra ótica da Oi ainda não chegou na sua
+									região, você pode deixar seu contato que a gente te avisa
+									assim que chegar.
 								</p>
 							</div>
 						</li>
 						<li class="s-faq__accordion">
 							<div class="s-faq__accordion-header">
-								<p>Internet residencial Oi Fibra: quais são os benefícios?</p>
+								<p>
+									Qual é a diferença entre banda larga com fibra ótica e banda
+									larga convencional?
+								</p>
 								<iconify-icon
 									class="icon"
 									icon="ph:caret-down-bold"
@@ -1797,47 +1764,24 @@
 							</div>
 							<div class="s-faq__accordion-content">
 								<p>
-									Oi Fibra é a internet da Oi que usa a fibra ótica pra oferecer
-									a melhor experiência de navegação pra você e sua família. Com
-									a conexão banda larga de alta velocidade, você assiste a
-									filmes e séries com alta qualidade de transmissão, joga online
-									com menos lag e faz download de arquivos pesados mais rápido.
+									A internet banda larga com fibra ótica, como o nome diz, usa
+									cabos de fibra ótica pra transmitir dados na velocidade da
+									luz. Já a banda larga convencional usa cabos de cobre, que
+									estão sujeitos a vários tipos de interferências e maior perda
+									de sinal.
 								</p>
-
 								<p>
-									Tudo isso é possível porque a tecnologia FTTH (Fiber To The
-									Home ou fibra para casa) leva o cabo da fibra até dentro da
-									casa dos usuários, garantindo sinal de internet com muito mais
-									estabilidade e velocidade.
-								</p>
-
-								<p>
-									Com a internet da Oi, você também recebe o potente modem WiFi
-									UP pra distribuir a internet pra casa toda, conectando vários
-									dispositivos ao mesmo tempo sem perda de sinal. Outras
-									operadoras utilizam a tecnologia FTTC (Fiber to the Curb), que
-									leva a fibra até o poste na rua, seguindo até a casa do
-									usuário por meio de cabos convencionais.
-								</p>
-
-								<p>
-									Ao contratar os planos de internet Oi Fibra, você ganha acesso
-									ao plano Oi Play TV Básico, serviço de streaming da Oi pra
-									assistir filmes e séries, além de canais de TV ao vivo direto
-									pelo computador, celular ou tablet.
-								</p>
-
-								<p>
-									Clientes Oi Fibra a partir dos planos com velocidade de
-									internet de 400 Mega têm assistência do Oi Expert, com
-									especialistas 24h por dia pra te dar suporte com computadores,
-									celulares, Smart TV e roteadores Wi-Fi Mesh.
+									A internet fibra ótica tem velocidades de download e upload
+									superiores às da banda larga convencional, além de maior
+									estabilidade de sinal. Por isso a internet Oi Fibra garante
+									uma experiência de navegação muito melhor. Isso acontece
+									porque a forma como os dados são transmitidos é diferente.
 								</p>
 							</div>
 						</li>
 						<li class="s-faq__accordion">
 							<div class="s-faq__accordion-header">
-								<p>Internet residencial Oi Fibra: quais são os benefícios?</p>
+								<p>Todos os planos de internet da Oi têm o roteador WiFi?</p>
 								<iconify-icon
 									class="icon"
 									icon="ph:caret-down-bold"
@@ -1845,41 +1789,11 @@
 							</div>
 							<div class="s-faq__accordion-content">
 								<p>
-									Oi Fibra é a internet da Oi que usa a fibra ótica pra oferecer
-									a melhor experiência de navegação pra você e sua família. Com
-									a conexão banda larga de alta velocidade, você assiste a
-									filmes e séries com alta qualidade de transmissão, joga online
-									com menos lag e faz download de arquivos pesados mais rápido.
-								</p>
-
-								<p>
-									Tudo isso é possível porque a tecnologia FTTH (Fiber To The
-									Home ou fibra para casa) leva o cabo da fibra até dentro da
-									casa dos usuários, garantindo sinal de internet com muito mais
-									estabilidade e velocidade.
-								</p>
-
-								<p>
-									Com a internet da Oi, você também recebe o potente modem WiFi
-									UP pra distribuir a internet pra casa toda, conectando vários
-									dispositivos ao mesmo tempo sem perda de sinal. Outras
-									operadoras utilizam a tecnologia FTTC (Fiber to the Curb), que
-									leva a fibra até o poste na rua, seguindo até a casa do
-									usuário por meio de cabos convencionais.
-								</p>
-
-								<p>
-									Ao contratar os planos de internet Oi Fibra, você ganha acesso
-									ao plano Oi Play TV Básico, serviço de streaming da Oi pra
-									assistir filmes e séries, além de canais de TV ao vivo direto
-									pelo computador, celular ou tablet.
-								</p>
-
-								<p>
-									Clientes Oi Fibra a partir dos planos com velocidade de
-									internet de 400 Mega têm assistência do Oi Expert, com
-									especialistas 24h por dia pra te dar suporte com computadores,
-									celulares, Smart TV e roteadores Wi-Fi Mesh.
+									Sim. Os planos Oi Internet oferecem o roteador WiFi UP, que
+									permite levar o sinal de internet pra casa toda e conectar
+									vários dispositivos ao mesmo tempo! Toda a família pode usar
+									Wi-Fi pra ver vídeos, fazer downloads, jogar online e acessar
+									redes sociais.
 								</p>
 							</div>
 						</li>
@@ -1956,19 +1870,10 @@
 
 		<div class="contact-us__mobile" id="contact-us__mobile">
 			<div class="container">
-				<div class="contact-us__step-1">
-					<button class="btn-txt yellow" type="button">
-						<iconify-icon icon="ic:baseline-whatsapp"></iconify-icon
-						><iconify-icon icon="ph:phone"></iconify-icon>Fale conosco
-					</button>
-				</div>
-
 				<div class="contact-us__step-2">
+					<p>Ligue grátis agora</p>
 					<button class="btn-txt yellow" type="button">
 						<iconify-icon icon="ph:phone"></iconify-icon>0800 730 1800
-					</button>
-					<button class="btn-txt wapp" type="button">
-						<iconify-icon icon="ic:baseline-whatsapp"></iconify-icon>WhatsApp
 					</button>
 				</div>
 			</div>
