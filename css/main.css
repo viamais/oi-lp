@@ -499,86 +499,186 @@ button {
     border: 1px solid #282828;
   }
 }
-.card-plan:hover {
-  color: #ffffff !important;
+@media (min-width: 960px) and (max-width: 1279px) {
+  .card-plan:hover {
+    color: #ffffff !important;
+  }
 }
-@media (max-width: 359px) {
+@media (min-width: 960px) and (max-width: 1279px) and (max-width: 359px) {
   .card-plan:hover {
     background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
   }
 }
-@media (min-width: 360px) and (max-width: 959px) {
+@media (min-width: 960px) and (max-width: 1279px) and (min-width: 360px) and (max-width: 959px) {
   .card-plan:hover {
     background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
   }
 }
-.card-plan:hover .settings__title {
-  color: #ffffff;
+@media (min-width: 960px) and (max-width: 1279px) {
+  .card-plan:hover .settings__title {
+    color: #ffffff;
+  }
+  .card-plan:hover button {
+    color: #ffffff;
+  }
+  .card-plan:hover .card-plan__header {
+    border-radius: 1.2rem 1.2rem 0 0;
+    background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
+  }
+  .card-plan:hover .card-plan__header .velocity-plus__velocity {
+    color: #ffffff !important;
+  }
+  .card-plan:hover .card-plan__details {
+    background: #01d318;
+  }
+  .card-plan:hover .card-plan__details .details__header h3 {
+    color: inherit;
+  }
 }
-.card-plan:hover button {
-  color: #ffffff;
-}
-.card-plan:hover .card-plan__header {
-  border-radius: 1.2rem 1.2rem 0 0;
-  background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
-}
-.card-plan:hover .card-plan__header .velocity-plus__velocity {
-  color: #ffffff !important;
-}
-.card-plan:hover .card-plan__details {
-  background: #01d318;
-}
-.card-plan:hover .card-plan__details .details__header h3 {
-  color: inherit;
-}
-@media (max-width: 359px) {
+@media (min-width: 960px) and (max-width: 1279px) and (max-width: 359px) {
   .card-plan:hover .card-plan__details {
     background: transparent;
   }
 }
-@media (min-width: 360px) and (max-width: 959px) {
+@media (min-width: 960px) and (max-width: 1279px) and (min-width: 360px) and (max-width: 959px) {
   .card-plan:hover .card-plan__details {
     background: transparent;
   }
 }
-.card-plan.active {
-  color: #ffffff !important;
+@media (min-width: 1280px) {
+  .card-plan:hover {
+    color: #ffffff !important;
+  }
 }
-@media (max-width: 359px) {
+@media (min-width: 1280px) and (max-width: 359px) {
+  .card-plan:hover {
+    background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
+  }
+}
+@media (min-width: 1280px) and (min-width: 360px) and (max-width: 959px) {
+  .card-plan:hover {
+    background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
+  }
+}
+@media (min-width: 1280px) {
+  .card-plan:hover .settings__title {
+    color: #ffffff;
+  }
+  .card-plan:hover button {
+    color: #ffffff;
+  }
+  .card-plan:hover .card-plan__header {
+    border-radius: 1.2rem 1.2rem 0 0;
+    background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
+  }
+  .card-plan:hover .card-plan__header .velocity-plus__velocity {
+    color: #ffffff !important;
+  }
+  .card-plan:hover .card-plan__details {
+    background: #01d318;
+  }
+  .card-plan:hover .card-plan__details .details__header h3 {
+    color: inherit;
+  }
+}
+@media (min-width: 1280px) and (max-width: 359px) {
+  .card-plan:hover .card-plan__details {
+    background: transparent;
+  }
+}
+@media (min-width: 1280px) and (min-width: 360px) and (max-width: 959px) {
+  .card-plan:hover .card-plan__details {
+    background: transparent;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) {
+  .card-plan.active {
+    color: #ffffff !important;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) and (max-width: 359px) {
   .card-plan.active {
     background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
   }
 }
-@media (min-width: 360px) and (max-width: 959px) {
+@media (min-width: 960px) and (max-width: 1279px) and (min-width: 360px) and (max-width: 959px) {
   .card-plan.active {
     background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
   }
 }
-.card-plan.active .settings__title {
-  color: #ffffff;
+@media (min-width: 960px) and (max-width: 1279px) {
+  .card-plan.active .settings__title {
+    color: #ffffff;
+  }
+  .card-plan.active button {
+    color: #ffffff;
+  }
+  .card-plan.active .card-plan__header {
+    background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+  .card-plan.active .card-plan__header .velocity-plus__velocity {
+    color: #ffffff !important;
+  }
+  .card-plan.active .card-plan__details {
+    background: #01d318;
+  }
+  .card-plan.active .card-plan__details .details__header h3 {
+    color: inherit;
+  }
 }
-.card-plan.active button {
-  color: #ffffff;
-}
-.card-plan.active .card-plan__header {
-  background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
-  border-radius: 1.2rem 1.2rem 0 0;
-}
-.card-plan.active .card-plan__header .velocity-plus__velocity {
-  color: #ffffff !important;
-}
-.card-plan.active .card-plan__details {
-  background: #01d318;
-}
-.card-plan.active .card-plan__details .details__header h3 {
-  color: inherit;
-}
-@media (max-width: 359px) {
+@media (min-width: 960px) and (max-width: 1279px) and (max-width: 359px) {
   .card-plan.active .card-plan__details {
     background: transparent;
   }
 }
-@media (min-width: 360px) and (max-width: 959px) {
+@media (min-width: 960px) and (max-width: 1279px) and (min-width: 360px) and (max-width: 959px) {
+  .card-plan.active .card-plan__details {
+    background: transparent;
+  }
+}
+@media (min-width: 1280px) {
+  .card-plan.active {
+    color: #ffffff !important;
+  }
+}
+@media (min-width: 1280px) and (max-width: 359px) {
+  .card-plan.active {
+    background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
+  }
+}
+@media (min-width: 1280px) and (min-width: 360px) and (max-width: 959px) {
+  .card-plan.active {
+    background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
+  }
+}
+@media (min-width: 1280px) {
+  .card-plan.active .settings__title {
+    color: #ffffff;
+  }
+  .card-plan.active button {
+    color: #ffffff;
+  }
+  .card-plan.active .card-plan__header {
+    background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+  .card-plan.active .card-plan__header .velocity-plus__velocity {
+    color: #ffffff !important;
+  }
+  .card-plan.active .card-plan__details {
+    background: #01d318;
+  }
+  .card-plan.active .card-plan__details .details__header h3 {
+    color: inherit;
+  }
+}
+@media (min-width: 1280px) and (max-width: 359px) {
+  .card-plan.active .card-plan__details {
+    background: transparent;
+  }
+}
+@media (min-width: 1280px) and (min-width: 360px) and (max-width: 959px) {
   .card-plan.active .card-plan__details {
     background: transparent;
   }
@@ -2635,4 +2735,25 @@ footer .footer__main .container .footer__text p a {
   background: #01d318;
   border-radius: 64px;
   color: #ffffff;
+}
+
+#wa-button {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  z-index: 9999;
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  #wa-button {
+    top: 17vh;
+    height: 4rem;
+    width: 4rem;
+  }
+}
+@media (max-width: 359px) {
+  #wa-button {
+    top: 17vh;
+    height: 4rem;
+    width: 4rem;
+  }
 }
