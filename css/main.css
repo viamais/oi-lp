@@ -748,12 +748,14 @@ button {
   .card-plan .card-plan__header .header__velocity-plus .velocity-plus__plus.active {
     font-size: 1.6rem;
     line-height: 2.4rem;
+    color: #282828;
   }
 }
 @media (min-width: 360px) and (max-width: 959px) {
   .card-plan .card-plan__header .header__velocity-plus .velocity-plus__plus.active {
     font-size: 1.6rem;
     line-height: 2.4rem;
+    color: #282828;
   }
 }
 .card-plan .card-plan__header .header__price {
