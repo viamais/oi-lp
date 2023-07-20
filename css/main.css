@@ -1216,6 +1216,16 @@ button {
   max-width: none;
   padding: 3.2rem;
 }
+@media (max-width: 359px) {
+  .blog-list__item.open .item__text .btn-share {
+    padding: 1.6rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .blog-list__item.open .item__text .btn-share {
+    padding: 1.6rem;
+  }
+}
 .blog-list__item .item__button {
   display: flex;
   align-items: flex-end;
@@ -2743,7 +2753,7 @@ footer .footer__main .container .footer__text p a {
   position: fixed;
   bottom: 5vh;
   right: 5vw;
-  z-index: 9999;
+  z-index: 999;
 }
 @media (min-width: 360px) and (max-width: 959px) {
   #wa-button {
