@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'Simplon BP';
+	src: url('../typeface/SimplonBP-Light.eot');
+	src: url('../typeface/SimplonBP-Light.eot?#iefix') format('embedded-opentype'),
+		url('../typeface/SimplonBP-Light.woff2') format('woff2'),
+		url('../typeface/SimplonBP-Light.woff') format('woff'),
+		url('../typeface/SimplonBP-Light.ttf') format('truetype'),
+		url('../typeface/SimplonBP-Light.svg#SimplonBP-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Simplon BP';
+	src: url('../typeface/SimplonBP-Medium.eot');
+	src: url('../typeface/SimplonBP-Medium.eot?#iefix')
+			format('embedded-opentype'),
+		url('../typeface/SimplonBP-Medium.woff2') format('woff2'),
+		url('../typeface/SimplonBP-Medium.woff') format('woff'),
+		url('../typeface/SimplonBP-Medium.ttf') format('truetype'),
+		url('../typeface/SimplonBP-Medium.svg#SimplonBP-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Simplon BP';
+	src: url('../typeface/SimplonBP-Regular.eot');
+	src: url('../typeface/SimplonBP-Regular.eot?#iefix')
+			format('embedded-opentype'),
+		url('../typeface/SimplonBP-Regular.woff2') format('woff2'),
+		url('../typeface/SimplonBP-Regular.woff') format('woff'),
+		url('../typeface/SimplonBP-Regular.ttf') format('truetype'),
+		url('../typeface/SimplonBP-Regular.svg#SimplonBP-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Simplon Oi Headline';
+	src: url('../typeface/SimplonOi-Headline.eot');
+	src: url('../typeface/SimplonOi-Headline.eot?#iefix')
+			format('embedded-opentype'),
+		url('../typeface/SimplonOi-Headline.woff2') format('woff2'),
+		url('../typeface/SimplonOi-Headline.woff') format('woff'),
+		url('../typeface/SimplonOi-Headline.ttf') format('truetype'),
+		url('../typeface/SimplonOi-Headline.svg#SimplonOi-Headline') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Simplon Oi';
+	src: url('../typeface/SimplonOi.eot');
+	src: url('../typeface/SimplonOi.eot?#iefix') format('embedded-opentype'),
+		url('../typeface/SimplonOi.woff2') format('woff2'),
+		url('../typeface/SimplonOi.woff') format('woff'),
+		url('../typeface/SimplonOi.ttf') format('truetype'),
+		url('../typeface/SimplonOi.svg#SimplonOi') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

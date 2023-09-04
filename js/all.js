@@ -85,6 +85,7 @@ $(document).ready(function () {
     $(this).find('.price-500-default').addClass('active');
     $(this).find('.price-400-default').addClass('active');
     $(this).find('.price-1000-default').addClass('active');
+    $(this).find('.price-x-default').addClass('active');
   });
   $('.settings__btn').on('click', function () {
     var parentCard = $(this).closest('.card-plan');
@@ -110,6 +111,12 @@ $(document).ready(function () {
       $(this).children('.combo-icon').addClass('active');
     } else if (parentCard.find('.combo-icon.active').length === 0) {
       parentCard.find('.price-1000-default').addClass('active');
+    }
+    if (!alreadyActive) {
+      parentCard.find('.' + priceClass).addClass('active');
+      $(this).children('.combo-icon').addClass('active');
+    } else if (parentCard.find('.combo-icon.active').length === 0) {
+      parentCard.find('.price-x-default').addClass('active');
     }
     $('.card-plan').not(parentCard).removeClass('active');
     if (parentCard.find('.combo-icon.active').length > 0) {

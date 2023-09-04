@@ -471,10 +471,745 @@ button {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 38.5rem;
   color: #282828;
   user-select: none;
   transition: all 0.1s ease-in-out;
-  border-radius: 1.2rem;
+  border-radius: 3.2rem;
+  border: 1px solid rgba(40, 40, 40, 0.5);
+  background: var(--neutras-branco-10, #fff);
+}
+.card-plan.accent-oi-x {
+  background: var(--neutras-preto-20, #282828);
+  color: var(--verdes-verde-50, #4be188) !important;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 38.5rem;
+  user-select: none;
+  transition: all 0.1s ease-in-out;
+  border-radius: 3.2rem;
+  border: 1px solid rgba(40, 40, 40, 0.5);
+}
+.card-plan.accent-oi-x .btn-txt {
+  padding: 2rem !important;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .btn-txt {
+    padding: 1rem !important;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .btn-txt {
+    padding: 1rem !important;
+  }
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x {
+    border: 1px solid #282828;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x {
+    border: 1px solid #282828;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) {
+  .card-plan.accent-oi-x:hover {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) and (max-width: 359px) {
+  .card-plan.accent-oi-x:hover {
+    background: var(--neutras-preto-20, #282828);
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) and (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x:hover {
+    background: var(--neutras-preto-20, #282828);
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) {
+  .card-plan.accent-oi-x:hover .settings__title {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+  .card-plan.accent-oi-x:hover button {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+  .card-plan.accent-oi-x:hover .card-plan__header {
+    border-radius: 3.2rem 3.2rem 0 0;
+    background: var(--neutras-preto-20, #282828);
+  }
+  .card-plan.accent-oi-x:hover .card-plan__header .velocity-plus__velocity {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+  .card-plan.accent-oi-x:hover .card-plan__details {
+    background: var(--neutras-preto-20, #282828);
+    border-radius: 0 0 3.2rem 3.2rem;
+  }
+  .card-plan.accent-oi-x:hover .card-plan__details .details__header h3 {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) and (max-width: 359px) {
+  .card-plan.accent-oi-x:hover .card-plan__details {
+    background: transparent;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) and (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x:hover .card-plan__details {
+    background: transparent;
+  }
+}
+@media (min-width: 1280px) {
+  .card-plan.accent-oi-x:hover {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+}
+@media (min-width: 1280px) and (max-width: 359px) {
+  .card-plan.accent-oi-x:hover {
+    background: var(--neutras-preto-20, #282828);
+  }
+}
+@media (min-width: 1280px) and (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x:hover {
+    background: var(--neutras-preto-20, #282828);
+  }
+}
+@media (min-width: 1280px) {
+  .card-plan.accent-oi-x:hover .settings__title {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+  .card-plan.accent-oi-x:hover button {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+  .card-plan.accent-oi-x:hover .card-plan__header {
+    border-radius: 3.2rem 3.2rem 0 0;
+    background: var(--neutras-preto-20, #282828);
+  }
+  .card-plan.accent-oi-x:hover .card-plan__header .velocity-plus__velocity {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+  .card-plan.accent-oi-x:hover .card-plan__details {
+    background: var(--neutras-preto-20, #282828);
+    border-radius: 0 0 3.2rem 3.2rem;
+  }
+  .card-plan.accent-oi-x:hover .card-plan__details .details__header h3 {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+}
+@media (min-width: 1280px) and (max-width: 359px) {
+  .card-plan.accent-oi-x:hover .card-plan__details {
+    background: transparent;
+  }
+}
+@media (min-width: 1280px) and (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x:hover .card-plan__details {
+    background: transparent;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) {
+  .card-plan.accent-oi-x.active {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) and (max-width: 359px) {
+  .card-plan.accent-oi-x.active {
+    background: var(--neutras-preto-20, #282828);
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) and (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x.active {
+    background: var(--neutras-preto-20, #282828);
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) {
+  .card-plan.accent-oi-x.active .settings__title {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+  .card-plan.accent-oi-x.active button {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+  .card-plan.accent-oi-x.active .card-plan__header {
+    background: var(--neutras-preto-20, #282828);
+    border-radius: 3.2rem 3.2rem 0 0;
+  }
+  .card-plan.accent-oi-x.active .card-plan__header .velocity-plus__velocity {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+  .card-plan.accent-oi-x.active .card-plan__details {
+    background: var(--neutras-preto-20, #282828);
+  }
+  .card-plan.accent-oi-x.active .card-plan__details .details__header h3 {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) and (max-width: 359px) {
+  .card-plan.accent-oi-x.active .card-plan__details {
+    background: transparent;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) and (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x.active .card-plan__details {
+    background: transparent;
+  }
+}
+@media (min-width: 1280px) {
+  .card-plan.accent-oi-x.active {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+}
+@media (min-width: 1280px) and (max-width: 359px) {
+  .card-plan.accent-oi-x.active {
+    background: var(--neutras-preto-20, #282828);
+  }
+}
+@media (min-width: 1280px) and (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x.active {
+    background: var(--neutras-preto-20, #282828);
+  }
+}
+@media (min-width: 1280px) {
+  .card-plan.accent-oi-x.active .settings__title {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+  .card-plan.accent-oi-x.active button {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+  .card-plan.accent-oi-x.active .card-plan__header {
+    background: var(--neutras-preto-20, #282828);
+    border-radius: 3.2rem 3.2rem 0 0;
+  }
+  .card-plan.accent-oi-x.active .card-plan__header .velocity-plus__velocity {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+  .card-plan.accent-oi-x.active .card-plan__details {
+    background: var(--neutras-preto-20, #282828);
+  }
+  .card-plan.accent-oi-x.active .card-plan__details .details__header h3 {
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+}
+@media (min-width: 1280px) and (max-width: 359px) {
+  .card-plan.accent-oi-x.active .card-plan__details {
+    background: transparent;
+  }
+}
+@media (min-width: 1280px) and (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x.active .card-plan__details {
+    background: transparent;
+  }
+}
+.card-plan.accent-oi-x .card-plan__header {
+  padding: 3.6rem 8.7rem 2.4rem 8.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__header {
+    padding: 2.4rem 1.85rem 0rem 1.85rem;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__header {
+    padding: 2.4rem 1.85rem 0rem 1.85rem;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.card-plan.accent-oi-x .card-plan__header .header__velocity-plus {
+  display: block;
+  text-align: center;
+}
+.card-plan.accent-oi-x .card-plan__header .header__velocity-plus .velocity-plus__velocity {
+  display: block;
+  font-family: "Simplon BP";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.4rem;
+  line-height: 150%;
+  letter-spacing: -0.005em;
+  color: var(--verdes-verde-50, #4be188) !important;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__header .header__velocity-plus .velocity-plus__velocity {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__header .header__velocity-plus .velocity-plus__velocity {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__header .header__velocity-plus .velocity-plus__plus {
+  display: none;
+}
+.card-plan.accent-oi-x .card-plan__header .header__velocity-plus .velocity-plus__plus.active {
+  color: var(--verdes-verde-50, #4be188) !important;
+  display: inline-block;
+  font-family: "Simplon Oi";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__header .header__velocity-plus .velocity-plus__plus.active {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__header .header__velocity-plus .velocity-plus__plus.active {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--verdes-verde-50, #4be188) !important;
+  }
+}
+.card-plan.accent-oi-x .card-plan__header .header__price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-direction: column;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price {
+    width: 14.8rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price {
+    width: 14.8rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__header .header__price .price__value {
+  display: none;
+}
+.card-plan.accent-oi-x .card-plan__header .header__price .price__value.active {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price .price__value.active {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price .price__value.active {
+    align-items: flex-start;
+  }
+}
+.card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .value__currency {
+  font-family: "Simplon BP";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .value__currency {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .value__currency {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .value__integer {
+  font-family: "Simplon Oi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8.2rem;
+  line-height: 7.2rem;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .value__integer {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .value__integer {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .third-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .third-column .value__decimal {
+  font-family: "Simplon Oi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 5.2rem;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .third-column .value__decimal {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .third-column .value__decimal {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .third-column .value__recurrence {
+  font-family: "Simplon Oi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .third-column .value__recurrence {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price .price__value.active .third-column .value__recurrence {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__header .header__price .price__method {
+  text-align: center;
+}
+.card-plan.accent-oi-x .card-plan__header .header__price .price__method .method__text {
+  font-family: "Simplon BP";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price .price__method .method__text {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__header .header__price .price__method .method__text {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__details {
+  padding: 2.4rem 5.4rem 3.6rem 5.4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__details {
+    padding: 2rem 1.6rem 2.4rem 1.6rem;
+    gap: 2rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__details .details__header {
+  text-align: center;
+}
+.card-plan.accent-oi-x .card-plan__details .details__header .header__title {
+  font-family: "Simplon BP";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: var(--verdes-verde-50, #4be188) !important;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__details .details__header .header__title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__details .details__header .header__title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__details .details__header .subtitle__text {
+  font-family: "Simplon BP";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--verdes-verde-50, #4be188) !important;
+}
+.card-plan.accent-oi-x .card-plan__details .details__settings {
+  display: flex;
+  gap: 1.2rem;
+}
+.card-plan.accent-oi-x .card-plan__details .details__settings li .settings__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-direction: column;
+  width: 9rem;
+  color: var(--verdes-verde-50, #4be188) !important;
+}
+.card-plan.accent-oi-x .card-plan__details .details__settings li .settings__btn .settings__title {
+  font-family: "Simplon BP";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-transform: uppercase;
+  color: var(--verdes-verde-50, #4be188) !important;
+}
+.card-plan.accent-oi-x .card-plan__details .btn-txt {
+  max-width: 100%;
+}
+.card-plan.accent-oi-x .card-plan__details .details__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card-plan.accent-oi-x .card-plan__details .details__footer .footer-list__btn {
+  font-family: "Simplon BP";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: center;
+  color: var(--verdes-verde-50, #4be188) !important;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__details .details__footer .footer-list__btn {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__details .details__footer .footer-list__btn {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__details .details__footer .footer-list__btn .icon {
+  font-size: 2.4rem;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__details .details__footer .footer-list__btn .icon {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__details .details__footer .footer-list__btn .icon {
+    font-size: 1.6rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__details .details__footer .footer__list {
+  display: none;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.card-plan.accent-oi-x .card-plan__details .details__footer .footer__list.open {
+  display: flex;
+}
+.card-plan.accent-oi-x .card-plan__details .details__footer .footer__list li {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.card-plan.accent-oi-x .card-plan__details .details__footer .footer__list li .icon {
+  font-size: 2.4rem;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__details .details__footer .footer__list li .icon {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__details .details__footer .footer__list li .icon {
+    font-size: 1.6rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__details .details__footer .details-offer {
+  font-family: "Simplon BP";
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--verdes-verde-50, #4be188) !important;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__details .details__footer .details-offer {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__details .details__footer .details-offer {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__offer-details {
+  display: none;
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 9999;
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item {
+  display: none;
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active {
+  max-width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 3.2rem 2.4rem;
+  background-color: #f1f1f1;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active {
+    max-width: 100vw;
+    padding: 2.4rem 1.6rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active {
+    max-width: 100vw;
+    padding: 2.4rem 1.6rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content {
+  color: #282828;
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__header {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__header .content__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__header .content__title .icon {
+  cursor: pointer;
+  font-size: 3.2rem;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__header .content__title .icon {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__header .content__title .icon {
+    font-size: 2.4rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__header .content__title h2 {
+  font-family: "Simplon BP";
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__header .content__title h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__header .content__title h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__header .content__subtitle {
+  font-family: "Simplon BP", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__header .content__subtitle .subtitle__velocity {
+  text-transform: uppercase;
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__main .main__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-color: #ffffff;
+  padding: 1.6rem;
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__main .main__item h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__main .main__item .item__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+@media (max-width: 359px) {
+  .card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__main .main__item .item__text {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 959px) {
+  .card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__main .main__item .item__text {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}
+.card-plan.accent-oi-x .card-plan__offer-details.open .offer-details__list .offer-details__item.active .offer-details__content .content__main .main__item .item__text.regulation {
+  color: #01d318;
+  text-decoration: underline;
 }
 .card-plan .btn-txt {
   padding: 2rem !important;
@@ -522,7 +1257,7 @@ button {
     color: #ffffff;
   }
   .card-plan:hover .card-plan__header {
-    border-radius: 1.2rem 1.2rem 0 0;
+    border-radius: 3.2rem 3.2rem 0 0;
     background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
   }
   .card-plan:hover .card-plan__header .velocity-plus__velocity {
@@ -530,6 +1265,7 @@ button {
   }
   .card-plan:hover .card-plan__details {
     background: #01d318;
+    border-radius: 0 0 3.2rem 3.2rem;
   }
   .card-plan:hover .card-plan__details .details__header h3 {
     color: inherit;
@@ -568,7 +1304,7 @@ button {
     color: #ffffff;
   }
   .card-plan:hover .card-plan__header {
-    border-radius: 1.2rem 1.2rem 0 0;
+    border-radius: 3.2rem 3.2rem 0 0;
     background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
   }
   .card-plan:hover .card-plan__header .velocity-plus__velocity {
@@ -576,6 +1312,7 @@ button {
   }
   .card-plan:hover .card-plan__details {
     background: #01d318;
+    border-radius: 0 0 3.2rem 3.2rem;
   }
   .card-plan:hover .card-plan__details .details__header h3 {
     color: inherit;
@@ -615,7 +1352,7 @@ button {
   }
   .card-plan.active .card-plan__header {
     background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
-    border-radius: 1.2rem 1.2rem 0 0;
+    border-radius: 3.2rem 3.2rem 0 0;
   }
   .card-plan.active .card-plan__header .velocity-plus__velocity {
     color: #ffffff !important;
@@ -661,7 +1398,7 @@ button {
   }
   .card-plan.active .card-plan__header {
     background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
-    border-radius: 1.2rem 1.2rem 0 0;
+    border-radius: 3.2rem 3.2rem 0 0;
   }
   .card-plan.active .card-plan__header .velocity-plus__velocity {
     color: #ffffff !important;
@@ -714,8 +1451,8 @@ button {
   font-family: "Simplon BP";
   font-style: normal;
   font-weight: 500;
-  font-size: 4.8rem;
-  line-height: 6.4rem;
+  font-size: 4.4rem;
+  line-height: 150%;
   letter-spacing: -0.005em;
   color: #282828;
   text-transform: uppercase;
@@ -1215,16 +1952,6 @@ button {
   width: 100%;
   max-width: none;
   padding: 3.2rem;
-}
-@media (max-width: 359px) {
-  .blog-list__item.open .item__text .btn-share {
-    padding: 1.6rem;
-  }
-}
-@media (min-width: 360px) and (max-width: 959px) {
-  .blog-list__item.open .item__text .btn-share {
-    padding: 1.6rem;
-  }
 }
 .blog-list__item .item__button {
   display: flex;
@@ -1899,6 +2626,7 @@ header .container-secondary .container .header-secondary__nav .header-secondary_
   align-items: center;
   justify-content: center;
   gap: 5.6rem;
+  max-width: 158rem;
 }
 @media (max-width: 359px) {
   .s-plans .container {
@@ -1977,8 +2705,8 @@ header .container-secondary .container .header-secondary__nav .header-secondary_
 }
 .s-plans .container .s-plans__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3.2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
   width: 100%;
   margin-top: 3.2rem;
 }
@@ -2753,7 +3481,7 @@ footer .footer__main .container .footer__text p a {
   position: fixed;
   bottom: 5vh;
   right: 5vw;
-  z-index: 999;
+  z-index: 9998;
 }
 @media (min-width: 360px) and (max-width: 959px) {
   #wa-button {

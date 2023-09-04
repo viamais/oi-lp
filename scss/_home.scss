@@ -1,0 +1,1385 @@
+.consult-coverage {
+  display: none;
+  &.open {
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+
+    background: linear-gradient(260.7deg, #93ed02 -59.74%, #1add12 92.82%);
+
+    .container {
+      position: relative;
+      height: 100%;
+
+      .input-group {
+        margin-top: 16rem;
+        display: flex;
+        align-items: center;
+
+        @include respond-to(small) {
+          margin-top: 8rem;
+        }
+
+        @include respond-to(medium) {
+          margin-top: 8rem;
+        }
+
+        .icon {
+          font-size: 3.2rem;
+          color: $branco-10;
+        }
+
+        .btn-cancel-consult {
+          font-family: "Simplon BP";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 3.2rem;
+          line-height: 4.4rem;
+
+          letter-spacing: 0.005em;
+          color: $branco-10;
+
+          @include respond-to(small) {
+            position: absolute;
+            top: 2.4rem;
+            right: 1.6rem;
+          }
+
+          @include respond-to(medium) {
+            position: absolute;
+            top: 2.4rem;
+            right: 1.6rem;
+          }
+          p {
+            @include respond-to(small) {
+              display: none;
+            }
+            @include respond-to(medium) {
+              display: none;
+            }
+          }
+
+          .icon {
+            display: none;
+            font-size: 3.2rem;
+            color: $branco-10;
+            @include respond-to(small) {
+              display: block;
+            }
+            @include respond-to(medium) {
+              display: block;
+            }
+          }
+        }
+
+        input {
+          width: 100%;
+          height: 6.4rem;
+          padding: 0 2.4rem;
+          margin-left: 1.6rem;
+          font-family: "Simplon BP";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 4.8rem;
+          line-height: 6.4rem;
+          background: transparent;
+          border: none;
+
+          letter-spacing: -0.005em;
+
+          color: rgba(255, 255, 255, 0.8);
+
+          @include respond-to(small) {
+            font-weight: 300;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            padding: 0;
+          }
+
+          @include respond-to(medium) {
+            font-weight: 300;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            padding: 0;
+          }
+
+          &::placeholder {
+            color: $branco-10;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .logo-oi {
+        mix-blend-mode: soft-light;
+        position: absolute;
+        bottom: 20%;
+        right: 0%;
+
+        @include respond-to(small) {
+          width: 8.4rem;
+          height: 7.2rem;
+          top: 2.4rem;
+          left: 1.6rem;
+        }
+
+        @include respond-to(medium) {
+          width: 8.4rem;
+          height: 7.2rem;
+          top: 2.4rem;
+          left: 1.6rem;
+        }
+      }
+
+      .city-list {
+        display: flex;
+        flex-direction: column;
+
+        gap: 0.8rem;
+
+        margin-left: 7.2rem;
+
+        @include respond-to(small) {
+          margin-left: 4.6rem;
+        }
+
+        @include respond-to(medium) {
+          margin-left: 4.6rem;
+        }
+
+        li {
+          .city-list__item {
+            font-family: "Simplon BP";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 3.2rem;
+            line-height: 4.4rem;
+
+            letter-spacing: 0.005em;
+
+            color: $branco-10;
+
+            @include respond-to(small) {
+              font-size: 2.4rem;
+              line-height: 3.2rem;
+            }
+
+            @include respond-to(medium) {
+              font-size: 2.4rem;
+              line-height: 3.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.s-hero {
+  padding-top: 13.6rem;
+  /* background: url('../img/s-hero-img.png') no-repeat center center;
+	background-size: cover; */
+
+  position: relative;
+  height: 70rem;
+
+  @include respond-to(small) {
+    height: 80vh;
+  }
+
+  @include respond-to(medium) {
+    height: 80vh;
+  }
+
+  .bg-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .container {
+    display: flex;
+    height: 100%;
+
+    @include respond-to(small) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include respond-to(medium) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .s-hero__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      width: 30rem;
+
+      .see-more-offers {
+        display: none;
+
+        @include respond-to(small) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-family: "Simplon BP";
+          font-weight: 400;
+          font-size: 2rem;
+          line-height: 2.8rem;
+          color: $branco-10;
+
+          .icon {
+            font-size: 2.4rem;
+            color: $branco-10;
+            animation: down-up 1s infinite;
+            @keyframes down-up {
+              0% {
+                transform: translateY(0);
+              }
+              50% {
+                transform: translateY(0.5rem);
+              }
+              100% {
+                transform: translateY(0);
+              }
+            }
+          }
+        }
+        @include respond-to(medium) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-family: "Simplon BP";
+          font-weight: 400;
+          font-size: 2rem;
+          line-height: 2.8rem;
+          color: $branco-10;
+
+          .icon {
+            font-size: 2.4rem;
+            color: $branco-10;
+            animation: down-up 1s infinite;
+            @keyframes down-up {
+              0% {
+                transform: translateY(0);
+              }
+              50% {
+                transform: translateY(0.5rem);
+              }
+              100% {
+                transform: translateY(0);
+              }
+            }
+          }
+        }
+      }
+      .btn-txt {
+        &.yellow {
+          width: 100% !important;
+        }
+      }
+      .content__text {
+        h1 {
+          display: flex;
+          flex-direction: column;
+          .content-text__title {
+            font-family: "Simplon Oi";
+            font-weight: 500;
+            font-size: 4rem;
+            line-height: 4rem;
+            text-transform: uppercase;
+            color: $branco-10;
+          }
+          .content-text__velocity {
+            span {
+              &:first-child {
+                font-family: "Simplon BP";
+                font-weight: 500;
+                font-size: 8.8rem;
+                line-height: 8.8rem;
+
+                background: linear-gradient(
+                  260.7deg,
+                  #93ed02 -59.74%,
+                  #1add12 92.82%
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                position: relative;
+
+                &::after {
+                  content: attr(data-content);
+                  position: absolute;
+                  z-index: -1;
+                  background: linear-gradient(
+                    260.7deg,
+                    #93ed02 -59.74%,
+                    #1add12 92.82%
+                  );
+                  clip-path: text;
+                  -webkit-clip-path: text;
+                  -webkit-text-fill-color: transparent;
+                  color: transparent;
+                }
+              }
+
+              &:last-child {
+                text-transform: uppercase;
+                font-family: "Simplon BP";
+                font-weight: 700;
+                font-size: 2.4rem;
+                line-height: 3rem;
+
+                background: linear-gradient(
+                  260.7deg,
+                  #93ed02 -59.74%,
+                  #1add12 92.82%
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                position: relative;
+
+                &::after {
+                  content: attr(data-content);
+                  position: absolute;
+                  z-index: -1;
+                  background: linear-gradient(
+                    260.7deg,
+                    #93ed02 -59.74%,
+                    #1add12 92.82%
+                  );
+                  clip-path: text;
+                  -webkit-clip-path: text;
+                  -webkit-text-fill-color: transparent;
+                  color: transparent;
+                }
+              }
+            }
+          }
+        }
+
+        .content-text__price {
+          display: flex;
+          color: $branco-10;
+          align-items: center;
+
+          .price__first-column {
+            display: flex;
+            flex-direction: column;
+            gap: -0.8rem;
+
+            span {
+              &:first-child {
+                font-family: "Simplon BP";
+                font-weight: 700;
+                font-size: 2.4rem;
+                line-height: 2.4rem;
+              }
+
+              &:last-child {
+                font-family: "Simplon BP";
+                font-weight: 700;
+                font-size: 3.6rem;
+                line-height: 3.6rem;
+              }
+            }
+          }
+
+          .price__second-column {
+            span {
+              font-family: "Simplon BP";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 96px;
+              line-height: 96px;
+            }
+          }
+
+          .price__third-column {
+            display: flex;
+            flex-direction: column;
+            span {
+              &:first-child {
+                font-family: "Simplon BP";
+                font-weight: 700;
+                font-size: 4.4rem;
+                line-height: 3.4rem;
+              }
+
+              &:last-child {
+                font-family: "Simplon Oi";
+                font-weight: 700;
+                font-size: 3.2rem;
+                line-height: 4rem;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+              }
+            }
+          }
+        }
+
+        .text__details {
+          font-family: "Simplon BP";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.4rem;
+          line-height: 1.4rem;
+          color: #ffffff;
+          display: flex;
+
+          gap: 0.6rem;
+
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.s-plans {
+  padding: 6.4rem 0;
+
+  @include respond-to(small) {
+    padding: 4rem 0;
+  }
+
+  @include respond-to(medium) {
+    padding: 4rem 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5.6rem;
+    max-width: 158rem;
+
+    @include respond-to(small) {
+      gap: 2.4rem;
+      align-items: flex-start;
+    }
+
+    @include respond-to(medium) {
+      gap: 2.4rem;
+      align-items: flex-start;
+    }
+
+    h3 {
+      font-family: "Simplon BP";
+      font-weight: 400;
+      font-size: 3.2rem;
+      line-height: 4.4rem;
+
+      letter-spacing: 0.005em;
+
+      color: $preto-20;
+
+      @include respond-to(small) {
+        font-size: 2rem;
+        line-height: 3.2rem;
+      }
+
+      @include respond-to(medium) {
+        font-size: 2rem;
+        line-height: 3.2rem;
+      }
+    }
+
+    h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include respond-to(small) {
+        align-items: flex-start;
+      }
+
+      @include respond-to(medium) {
+        align-items: flex-start;
+      }
+
+      p {
+        &:first-child {
+          font-family: "Simplon BP";
+          font-weight: 500;
+          font-size: 4.8rem;
+          line-height: 6.4rem;
+
+          letter-spacing: -0.005em;
+
+          color: $preto-20;
+
+          @include respond-to(small) {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+          }
+
+          @include respond-to(medium) {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+          }
+        }
+
+        &:last-child {
+          font-family: "Simplon BP";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+
+          color: $verde-20;
+        }
+      }
+    }
+
+    .s-plans__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.2rem;
+      width: 100%;
+      margin-top: 3.2rem;
+
+      @include respond-to(small) {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+      }
+
+      @include respond-to(medium) {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+      }
+    }
+
+    .s-plans-link {
+      font-family: "Simplon BP";
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+
+      color: $verde-40;
+      text-decoration: underline;
+    }
+  }
+}
+
+.s-coverage {
+  .container {
+    display: flex;
+    padding: 4rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    align-self: stretch;
+
+    h2 {
+      color: var(--neutras-preto-20, #282828);
+      text-align: center;
+
+      /* Regular/Regular 60 */
+      font-family: Simplon BP;
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 4.4rem; /* 137.5% */
+      letter-spacing: 0.016rem;
+
+      @include respond-to(small) {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+      }
+
+      @include respond-to(medium) {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+      }
+    }
+    form {
+      display: flex;
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      .form-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+
+        @include respond-to(small) {
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+        }
+
+        @include respond-to(medium) {
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+        }
+
+        .form-control {
+          display: flex;
+          padding: 1.2rem 1.6rem;
+          align-items: center;
+          gap: 1rem;
+          border-radius: 0.4rem;
+          border: 1px solid var(--neutras-preto-20, #282828);
+          color: var(--neutras-preto-20, #282828);
+
+          /* Regular/Regular 40 */
+          font-family: "Open Sans";
+          font-size: 2rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 2.8rem; /* 140% */
+          @include respond-to(small) {
+            width: 100%;
+          }
+
+          @include respond-to(medium) {
+            width: 100%;
+          }
+        }
+      }
+
+      .btn-submit {
+        display: flex;
+        width: 32.2rem;
+        padding: 2rem 6.4rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 6.4rem;
+        background: var(--verdes-verde-30, #bfee62);
+        color: var(--neutras-preto-20, #282828);
+
+        /* Medium/Medium 40 */
+        font-family: Simplon BP;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.8rem; /* 140% */
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background: var(--verdes-verde-40, #a0e03d);
+        }
+      }
+    }
+  }
+}
+
+.s-know-more {
+  padding: 6.4rem 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.6rem;
+
+      p {
+        &:first-child {
+          font-family: "Simplon BP";
+          font-weight: 400;
+          font-size: 3.2rem;
+          line-height: 4.4rem;
+
+          letter-spacing: 0.005em;
+          color: $preto-20;
+
+          @include respond-to(small) {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+          }
+
+          @include respond-to(medium) {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+          }
+        }
+
+        &:last-child {
+          font-family: "Simplon BP";
+          font-weight: 400;
+          font-size: 2rem;
+          line-height: 2.8rem;
+
+          letter-spacing: 0.005em;
+          color: $preto-20;
+
+          @include respond-to(small) {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+          }
+
+          @include respond-to(medium) {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+  .blog-list {
+    width: 100%;
+    display: flex;
+    gap: 2.4rem;
+
+    @include respond-to(small) {
+      flex-direction: column;
+    }
+
+    @include respond-to(medium) {
+      flex-direction: column;
+    }
+  }
+}
+
+.s-faq {
+  margin: 6.4rem 0;
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+
+    @include respond-to(medium) {
+      flex-direction: column;
+    }
+
+    @include respond-to(small) {
+      flex-direction: column;
+    }
+
+    .s-faq__text {
+      max-width: 50%;
+      @include respond-to(medium) {
+        max-width: 100%;
+        display: flex;
+        gap: 1.6rem;
+      }
+      @include respond-to(small) {
+        max-width: 100%;
+        display: flex;
+        gap: 1.6rem;
+      }
+      .icon {
+        font-size: 4rem;
+        color: $verde-40;
+      }
+      h2 {
+        font-family: "Simplon BP";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.2rem;
+        line-height: 4.4rem;
+
+        letter-spacing: 0.005em;
+
+        color: &preto-20;
+        @include respond-to(medium) {
+          font-family: "Simplon BP";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 2.4rem;
+          line-height: 3.2rem;
+          color: $preto-20;
+        }
+        @include respond-to(small) {
+          font-family: "Simplon BP";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 2.4rem;
+          line-height: 3.2rem;
+          color: $preto-20;
+        }
+      }
+
+      p {
+        @include respond-to(medium) {
+        }
+
+        @include respond-to(small) {
+        }
+      }
+    }
+
+    .s-faq__questions {
+      width: 100%;
+      max-width: 50%;
+      @include respond-to(medium) {
+        max-width: 100%;
+      }
+      @include respond-to(medium) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+footer {
+  .cookie-advice {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2.4rem;
+    gap: 1rem;
+    background: $verde-20;
+    p {
+      font-family: "Simplon BP";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.8rem;
+      text-align: center;
+      color: $branco-10;
+
+      a {
+        text-decoration-line: underline;
+        color: inherit;
+      }
+    }
+  }
+
+  .footer__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.4rem;
+    gap: 2.4rem;
+
+    background: #f1f1f1;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.4rem;
+
+      .footer__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          font-family: "Simplon BP";
+          font-weight: 500;
+          font-size: 2rem;
+          line-height: 2.8rem;
+
+          display: flex;
+          text-align: center;
+
+          /* Neutras/Preto 20 */
+
+          color: #282828;
+
+          a {
+            text-decoration-line: underline;
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+.s-know-products {
+  padding: 6.4rem 0;
+  position: relative;
+
+  &.black {
+    background-color: $preto-20;
+  }
+
+  &.white {
+    background-color: $branco-10;
+    .s-know-products__title {
+      color: $preto-20;
+    }
+  }
+
+  &.green {
+    background-color: $verde-50;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.8rem;
+    flex-direction: column;
+
+    h2 {
+      font-family: "Simplon BP";
+      font-weight: 400;
+      font-size: 3.2rem;
+      line-height: 4.4rem;
+
+      text-align: center;
+      letter-spacing: 0.005em;
+
+      color: $branco-10;
+
+      @include respond-to(medium) {
+        font-family: "Simplon BP";
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        color: $branco-10;
+      }
+
+      @include respond-to(small) {
+        font-family: "Simplon BP";
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        color: $branco-10;
+      }
+    }
+
+    .s-know-products__nav {
+      @include respond-to(medium) {
+        display: none;
+      }
+
+      @include respond-to(small) {
+        display: none;
+      }
+      width: max-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6.4rem;
+      li {
+        box-sizing: content-box;
+      }
+
+      @include respond-to(medium) {
+        gap: 0.8rem;
+      }
+
+      @include respond-to(small) {
+        gap: 0.8rem;
+      }
+
+      &.mobile {
+        display: none;
+
+        @include respond-to(medium) {
+          display: flex;
+        }
+
+        @include respond-to(small) {
+          display: flex;
+        }
+      }
+    }
+
+    .s-know-products__content {
+      &.part-one {
+        @include respond-to(medium) {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+
+        @include respond-to(small) {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+
+        .content__txt {
+          img {
+            max-width: 16.4rem;
+          }
+          display: flex;
+          flex-direction: column;
+          gap: 5.6rem;
+          max-width: 50%;
+
+          @include respond-to(medium) {
+            max-width: 100%;
+          }
+
+          @include respond-to(small) {
+            max-width: 100%;
+          }
+
+          .txt__box {
+            color: $branco-10;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            h3 {
+              font-family: "Simplon BP";
+              font-weight: 400;
+              font-size: 2.4rem;
+              line-height: 3.2rem;
+              /* Neutras/Branco 10 */
+            }
+            .box__emphasis {
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 2rem;
+              line-height: 133%;
+              color: #ffffff;
+            }
+
+            .box__subtitle {
+              font-family: "Simplon BP";
+              font-weight: 500;
+              font-size: 2rem;
+              line-height: 2.8rem;
+
+              .box__accent {
+                color: $verde-30;
+              }
+            }
+
+            .box__paragraph {
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 1.6rem;
+              line-height: 2.4rem;
+
+              letter-spacing: 0.005em;
+            }
+          }
+        }
+
+        .content__img {
+          position: absolute;
+          right: 0;
+          bottom: 6.4rem;
+
+          img {
+            max-width: 100%;
+          }
+
+          @include respond-to(medium) {
+            position: relative;
+            bottom: 0;
+            right: 0;
+          }
+
+          @include respond-to(small) {
+            position: relative;
+            bottom: 0;
+            right: 0;
+          }
+        }
+      }
+
+      &.part-two {
+        display: flex;
+        @include respond-to(medium) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        @include respond-to(small) {
+          flex-direction: column;
+          align-items: center;
+        }
+        .content__txt {
+          @include respond-to(medium) {
+            max-width: 100%;
+          }
+
+          @include respond-to(small) {
+            max-width: 100%;
+          }
+          .txt__banners {
+            display: flex;
+            gap: 2.4rem;
+            .banner {
+              width: 13.8rem;
+
+              img {
+                max-width: 100%;
+                height: auto;
+              }
+            }
+          }
+          img {
+            max-width: 8rem;
+          }
+          display: flex;
+          flex-direction: column;
+          gap: 5.6rem;
+          max-width: 50%;
+
+          .txt__box {
+            color: $preto-20;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            h3 {
+              font-family: "Simplon BP";
+              font-weight: 500;
+              font-size: 2.4rem;
+              line-height: 3.2rem;
+            }
+            .box__emphasis {
+              font-family: "Simplon BP", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 2rem;
+              line-height: 133%;
+            }
+
+            .box__subtitle {
+              font-family: "Simplon BP";
+              font-weight: 500;
+              font-size: 2rem;
+              line-height: 2.8rem;
+
+              .box__accent {
+                color: $verde-30;
+              }
+            }
+
+            .box__paragraph {
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 1.6rem;
+              line-height: 2.4rem;
+
+              letter-spacing: 0.005em;
+            }
+          }
+        }
+
+        .content__img {
+          /* position: absolute;
+					right: 0;
+					bottom: 6.4rem;
+					img {
+						max-width: 100%;
+					} */
+        }
+      }
+
+      &.part-three {
+        display: flex;
+
+        @include respond-to(medium) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        @include respond-to(small) {
+          flex-direction: column;
+          align-items: center;
+        }
+        .content__txt {
+          .txt__banners {
+            display: flex;
+            gap: 2.4rem;
+            .banner {
+              width: 13.8rem;
+
+              img {
+                max-width: 100%;
+                height: auto;
+              }
+            }
+          }
+          img {
+            max-width: 20.1rem;
+          }
+          display: flex;
+          flex-direction: column;
+          gap: 5.6rem;
+          max-width: 50%;
+
+          @include respond-to(medium) {
+            max-width: 100%;
+          }
+
+          @include respond-to(small) {
+            max-width: 100%;
+          }
+
+          .txt__box {
+            color: $preto-20;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+
+            @include respond-to(medium) {
+              max-width: 100%;
+            }
+
+            @include respond-to(small) {
+              max-width: 100%;
+            }
+            h3 {
+              font-family: "Simplon BP";
+              font-weight: 500;
+              font-size: 2.4rem;
+              line-height: 3.2rem;
+            }
+            .box__emphasis {
+              font-family: "Simplon BP", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 2rem;
+              line-height: 133%;
+            }
+
+            .box__subtitle {
+              font-family: "Simplon BP";
+              font-weight: 500;
+              font-size: 2rem;
+              line-height: 2.8rem;
+
+              .box__accent {
+                color: $verde-30;
+              }
+            }
+
+            .box__paragraph {
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 1.6rem;
+              line-height: 2.4rem;
+
+              letter-spacing: 0.005em;
+            }
+          }
+        }
+
+        .content__img {
+          /* position: absolute;
+					right: 0;
+					bottom: 6.4rem;
+					img {
+						max-width: 100%;
+					} */
+        }
+      }
+    }
+  }
+}
+
+.contact-us__mobile {
+  width: 100%;
+  display: none;
+  background: #ffffff;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px 12px 0px 0px;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9998;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include respond-to(medium) {
+    display: flex;
+  }
+
+  .contact-us__step-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    p {
+      color: var(--neutras-preto-20, #282828);
+      text-align: center;
+
+      /* Light/Light 30 */
+      font-family: Simplon BP, sans-serif;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 2.4rem; /* 150% */
+    }
+  }
+
+  .btn-txt {
+    max-width: 100%;
+    padding: 1.2rem 2.4rem;
+
+    &.wapp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: #01d318;
+      border-radius: 64px;
+      color: $branco-10;
+    }
+  }
+}
+
+#wa-button {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  z-index: 9998;
+  @include respond-to(medium) {
+    top: 17vh;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  @include respond-to(small) {
+    top: 17vh;
+    height: 4rem;
+    width: 4rem;
+  }
+}
