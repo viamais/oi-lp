@@ -432,26 +432,54 @@ button {
 .combo-icon.fixo {
   background: #ffffff url("../svg/icon-combo-green.svg") center center no-repeat;
 }
-.combo-icon.fixo:hover {
-  background: #009e0b url("../svg/icon-combo-white.svg") center center no-repeat;
+@media (min-width: 1280px) {
+  .combo-icon.fixo:hover {
+    background: #009e0b url("../svg/icon-combo-white.svg") center center no-repeat;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) {
+  .combo-icon.fixo:hover {
+    background: #009e0b url("../svg/icon-combo-white.svg") center center no-repeat;
+  }
 }
 .combo-icon.fixo.active {
   background: #fbd84b url("../svg/icon-combo-black.svg") center center no-repeat;
 }
-.combo-icon.fixo.active:hover {
-  background: #ffe93d url("../svg/icon-combo-black.svg") center center no-repeat;
+@media (min-width: 1280px) {
+  .combo-icon.fixo.active:hover {
+    background: #ffe93d url("../svg/icon-combo-black.svg") center center no-repeat;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) {
+  .combo-icon.fixo.active:hover {
+    background: #ffe93d url("../svg/icon-combo-black.svg") center center no-repeat;
+  }
 }
 .combo-icon.oi-play-tv {
   background: #ffffff url("../svg/icon-oi-play-tv-green.svg") center center no-repeat;
 }
-.combo-icon.oi-play-tv:hover {
-  background: #009e0b url("../svg/icon-oi-play-tv-white.svg") center center no-repeat;
+@media (min-width: 1280px) {
+  .combo-icon.oi-play-tv:hover {
+    background: #009e0b url("../svg/icon-oi-play-tv-white.svg") center center no-repeat;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) {
+  .combo-icon.oi-play-tv:hover {
+    background: #009e0b url("../svg/icon-oi-play-tv-white.svg") center center no-repeat;
+  }
 }
 .combo-icon.oi-play-tv.active {
   background: #fbd84b url("../svg/icon-oi-play-tv-black.svg") center center no-repeat;
 }
-.combo-icon.oi-play-tv.active:hover {
-  background: #ffe93d url("../svg/icon-oi-play-tv-black.svg") center center no-repeat;
+@media (min-width: 1280px) {
+  .combo-icon.oi-play-tv.active:hover {
+    background: #ffe93d url("../svg/icon-oi-play-tv-black.svg") center center no-repeat;
+  }
+}
+@media (min-width: 960px) and (max-width: 1279px) {
+  .combo-icon.oi-play-tv.active:hover {
+    background: #ffe93d url("../svg/icon-oi-play-tv-black.svg") center center no-repeat;
+  }
 }
 .combo-icon.conteudos {
   background: #ffffff url("../svg/icon-conteudos-green.svg") center center no-repeat;
